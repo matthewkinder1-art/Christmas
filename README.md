@@ -66,9 +66,23 @@ Perranporth beach is unrestricted in December.
 2 dogs, from **£1,467 to £3,075** for the week including fees. That is the only source that
 would confirm availability for our exact dates.
 
-The catch: they are all single houses. Not one gives the aunt and uncle a separate building,
-and none has been checked for a ground-floor bedroom. They solve the *availability* problem,
-not the *layout* problem — treat them as a fallback if the two-building rule flexes.
+**The catch — none of them meets the two-buildings rule.** All 18 listing descriptions were read
+and checked: **zero** have an annexe, second cottage, or any separate self-contained building.
+There is nowhere for the aunt and uncle to sleep apart from everyone else.
+
+On Airbnb the only way to get two buildings is to book **two separate listings on one site** —
+which is exactly the pattern the eleven cottages already use.
+
+On Nan's ground-floor bedroom they do better: **3 of the 18** have one.
+
+| Property | Week total | Ground-floor sleeping |
+|---|---|---|
+| Brayside, converted chapel, St Just | £1,700 | **Two** bedrooms downstairs; master en suite is upstairs |
+| Beachfront home, Porth | £1,684 | Third bedroom downstairs, double, shower room on the same level |
+| Beachside family home, Praa Sands | £3,075 | Bedroom One downstairs, super king, converts to twins |
+
+They solve the *availability* problem, not the *layout* problem — a fallback if the two-building
+rule flexes, or leverage on dates.
 
 Only Cornwall has been searched so far. The same search still needs running for the Peak
 District, Yorkshire, Northumberland, Herefordshire and Dartmoor.
