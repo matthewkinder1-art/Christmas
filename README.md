@@ -60,18 +60,39 @@ Perranporth beach is unrestricted in December.
 
 **Best on-site:** Low Costa Mill — enclosed dog paddock plus 10 acres of private woodland.
 
+## Airbnb
+
+**18 Cornish properties are confirmed available for 21–28 December 2026**, for 6 guests with
+2 dogs, from **£1,467 to £3,075** for the week including fees. That is the only source that
+would confirm availability for our exact dates.
+
+The catch: they are all single houses. Not one gives the aunt and uncle a separate building,
+and none has been checked for a ground-floor bedroom. They solve the *availability* problem,
+not the *layout* problem — treat them as a fallback if the two-building rule flexes.
+
+Only Cornwall has been searched so far. The same search still needs running for the Peak
+District, Yorkshire, Northumberland, Herefordshire and Dartmoor.
+
 ## Caveats
 
-- **No availability is confirmed.** None of these sites expose a live Christmas 2026 calendar.
-- **Only two published Christmas prices** — Low Costa Mill and West Close. The rest are "from"
-  rates; festive weeks usually run 1.5–2.5× that.
-- **Airbnb isn't represented** — it blocks automated searching, so someone should look manually.
+- **No availability is confirmed for the eleven cottages.** None of those sites expose a live
+  Christmas 2026 calendar. (The Airbnb listings above are the exception — those are live.)
+- **Only two published Christmas prices** among the cottages — Low Costa Mill and West Close.
+  The rest are "from" rates; festive weeks usually run 1.5–2.5× that.
 - Attraction opening dates follow last year's pattern unless stated; most venues haven't
   published December 2026 hours yet.
 
 ## Files
 
-- `index.html` — the whole site, self-contained (no build step, no dependencies)
+- `index.html` — hub: the brief, all twelve options as cards, comparison table, dog walks,
+  ruled-out list, and the questions to ask
+- One page per property — `cowarne.html`, `hoegrange.html`, `wooder.html`, `lowcosta.html`,
+  `burnfoot.html`, `westclose.html`, `longview.html`, `trenarlett.html`, `tregrehan.html`,
+  `harrods.html`, `helebarton.html`
+- `airbnb.html` — the 18 live-availability finds
+- `style.css` — shared by every page
+
+No build step and no dependencies; the pages are plain HTML.
 
 Photos are hotlinked from the agency listings and will quietly disappear if those change.
 Maps are OpenStreetMap embeds.
