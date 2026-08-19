@@ -5,183 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Christmas 2026 — Cottage Shortlist</title>
 <meta name="description" content="Family shortlist of dog-friendly UK cottages for Christmas 2026, with sleeping plans, maps and prices.">
-<style>
-  :root{
-    --bg:#faf7f2; --card:#fff; --ink:#1b1a17; --muted:#6d665e;
-    --line:#e6e0d6; --line2:#f0ece4;
-    --green:#2f6b4f; --green-soft:#e7f0ea;
-    --red:#9c2f22; --red-soft:#fbeae7;
-    --amber:#8a5a1f; --amber-soft:#fbf2e3;
-    --gold:#a8862c;
-    --shadow:0 1px 3px rgba(0,0,0,.05), 0 8px 24px rgba(0,0,0,.04);
-  }
-  @media (prefers-color-scheme:dark){
-    :root{
-      --bg:#141311; --card:#1e1d1a; --ink:#f2eee7; --muted:#a49c92;
-      --line:#332f29; --line2:#282520;
-      --green:#71bd98; --green-soft:#1c2b23;
-      --red:#e08573; --red-soft:#2e1d19;
-      --amber:#dcab63; --amber-soft:#2b2218;
-      --gold:#d4b25e;
-      --shadow:0 1px 3px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
-    }
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth; scroll-padding-top:64px}
-  body{margin:0;background:var(--bg);color:var(--ink);
-    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    -webkit-font-smoothing:antialiased}
-  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
-
-  /* ---- header ---- */
-  .hero{padding:56px 0 32px;text-align:center;border-bottom:1px solid var(--line)}
-  .snow{font-size:30px;letter-spacing:6px;margin-bottom:14px;opacity:.75}
-  h1{margin:0 0 10px;font-size:clamp(30px,6vw,46px);letter-spacing:-.025em;line-height:1.1}
-  .tagline{margin:0 auto;max-width:620px;color:var(--muted);font-size:17px}
-  .dates{display:inline-block;margin-top:18px;background:var(--green-soft);color:var(--green);
-    font-weight:600;font-size:14px;padding:7px 16px;border-radius:30px}
-
-  /* ---- nav ---- */
-  nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 92%,transparent);
-    backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-  nav .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:9px;padding-bottom:9px;
-    scrollbar-width:none}
-  nav .wrap::-webkit-scrollbar{display:none}
-  nav a{flex:0 0 auto;font-size:13.5px;text-decoration:none;color:var(--muted);
-    padding:6px 12px;border-radius:7px;white-space:nowrap;font-weight:500}
-  nav a:hover{background:var(--line2);color:var(--ink)}
-
-  /* ---- generic ---- */
-  section{padding:48px 0 8px}
-  h2{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);
-    margin:0 0 18px;font-weight:700}
-  .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;
-    padding:24px;box-shadow:var(--shadow)}
-
-  /* ---- who's going ---- */
-  .people{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:4px}
-  .person{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .person .nm{font-weight:650;font-size:15px}
-  .person .rq{font-size:12.5px;color:var(--muted);margin-top:2px;line-height:1.45}
-  .rules{list-style:none;padding:0;margin:20px 0 0}
-  .rules li{padding:9px 0 9px 28px;position:relative;font-size:14.5px;border-top:1px solid var(--line2)}
-  .rules li::before{content:"";position:absolute;left:4px;top:16px;width:7px;height:7px;
-    border-radius:50%;background:var(--green)}
-  .rules li strong{font-weight:650}
-
-  /* ---- comparison table ---- */
-  .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card);
-    box-shadow:var(--shadow)}
-  table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:720px}
-  th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);
-    font-weight:700;padding:14px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
-  td{padding:13px 12px;border-bottom:1px solid var(--line2);vertical-align:top}
-  tr:last-child td{border-bottom:none}
-  td.nme{font-weight:650;white-space:nowrap}
-  td.nme small{display:block;font-weight:400;color:var(--muted);font-size:12px;margin-top:1px}
-  .y{color:var(--green);font-weight:700}
-  .n{color:var(--red);font-weight:700}
-  .m{color:var(--amber);font-weight:700}
-  .pconf{color:var(--green);font-weight:650}
-
-  /* ---- property cards ---- */
-  .prop{background:var(--card);border:1px solid var(--line);border-radius:16px;
-    overflow:hidden;margin-bottom:26px;box-shadow:var(--shadow)}
-  .prop.pick{border-color:var(--green);border-width:2px}
-  .phead{padding:24px 24px 0;position:relative}
-  .badge{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.09em;
-    text-transform:uppercase;padding:4px 10px;border-radius:20px;margin-bottom:11px}
-  .b-green{background:var(--green-soft);color:var(--green)}
-  .b-amber{background:var(--amber-soft);color:var(--amber)}
-  .prop h3{margin:0 0 4px;font-size:23px;letter-spacing:-.015em;line-height:1.2}
-  .loc{color:var(--muted);font-size:14px;margin:0 0 4px}
-  .price-tag{display:inline-block;margin-top:12px;font-size:15px;font-weight:650;
-    background:var(--green-soft);color:var(--green);padding:7px 14px;border-radius:9px}
-  .price-tag.est{background:var(--amber-soft);color:var(--amber)}
-  .price-tag small{font-weight:400;opacity:.85}
-
-  /* photos */
-  .gal{display:flex;gap:8px;overflow-x:auto;padding:20px 24px 4px;scrollbar-width:thin}
-  .gal img{height:170px;width:auto;min-width:120px;border-radius:10px;object-fit:cover;
-    background:var(--line2);flex:0 0 auto;border:1px solid var(--line)}
-  .gal .ph{height:170px;min-width:230px;border-radius:10px;background:var(--line2);
-    border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;
-    color:var(--muted);font-size:12.5px;flex:0 0 auto;text-align:center;padding:12px}
-
-  .pbody{padding:20px 24px 24px}
-  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-  @media (max-width:760px){.grid2{grid-template-columns:1fr}}
-
-  h4{font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
-    margin:0 0 10px;font-weight:700}
-
-  /* sleeping plan */
-  .sleep{width:100%;border-collapse:collapse;font-size:13.5px;min-width:0}
-  .sleep th{padding:0 8px 7px 0;font-size:10.5px}
-  .sleep td{padding:9px 8px 9px 0;border-bottom:1px solid var(--line2);vertical-align:top}
-  .sleep tr:last-child td{border-bottom:none}
-  .who{font-weight:650;white-space:nowrap}
-  .who .tag{display:block;font-weight:400;font-size:11px;color:var(--muted)}
-  .bld{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:5px;
-    background:var(--line2);color:var(--muted);letter-spacing:.03em;white-space:nowrap}
-  .bld.main{background:var(--green-soft);color:var(--green)}
-  .bld.annexe{background:var(--amber-soft);color:var(--amber)}
-  .gf{color:var(--green);font-weight:600}
-
-  .map{width:100%;height:230px;border:1px solid var(--line);border-radius:11px;
-    background:var(--line2);display:block}
-  .maplink{display:inline-block;font-size:12.5px;color:var(--muted);margin-top:7px;text-decoration:none}
-  .maplink:hover{color:var(--ink);text-decoration:underline}
-
-  .facts{list-style:none;padding:0;margin:0}
-  .facts li{padding:7px 0 7px 24px;position:relative;font-size:14px;border-bottom:1px solid var(--line2)}
-  .facts li:last-child{border-bottom:none}
-  .facts li::before{position:absolute;left:0;top:7px;font-weight:800;font-size:13px}
-  .f-y::before{content:"\2713";color:var(--green)}
-  .f-n::before{content:"\2715";color:var(--red)}
-  .f-m::before{content:"\003F";color:var(--amber)}
-
-  .links{margin-top:20px;padding-top:18px;border-top:1px solid var(--line2)}
-  a.btn{display:inline-block;font-size:13px;font-weight:550;text-decoration:none;color:var(--ink);
-    border:1px solid var(--line);background:var(--bg);border-radius:8px;padding:7px 13px;
-    margin:0 6px 7px 0}
-  a.btn:hover{border-color:var(--ink)}
-  a.btn.pri{background:var(--green);border-color:var(--green);color:#fff}
-  a.btn.pri:hover{opacity:.88}
-
-  .note{font-size:13.5px;color:var(--muted);margin:14px 0 0;line-height:1.55}
-  .flag{margin-top:16px;background:var(--amber-soft);border-left:3px solid var(--amber);
-    padding:12px 14px;border-radius:0 8px 8px 0;font-size:13.5px}
-  .flag b{color:var(--amber)}
-
-  /* ruled out */
-  .out{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
-  .oc{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:15px 17px}
-  .oc .t{font-weight:650;font-size:14.5px}
-  .oc .w{font-size:12.5px;color:var(--muted);margin-top:4px}
-  .oc .x{display:inline-block;margin-top:8px;font-size:11px;font-weight:700;color:var(--red);
-    background:var(--red-soft);padding:3px 8px;border-radius:5px}
-
-  .callout{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--amber);
-    border-radius:0 12px 12px 0;padding:20px 22px;box-shadow:var(--shadow)}
-  .callout h3{margin:0 0 8px;font-size:17px}
-  .callout p{margin:0 0 10px;font-size:14.5px}
-  .callout p:last-child{margin-bottom:0}
-
-  .qs{list-style:none;padding:0;margin:0;counter-reset:q}
-  .qs li{counter-increment:q;position:relative;padding:11px 0 11px 36px;font-size:14.5px;
-    border-bottom:1px solid var(--line2)}
-  .qs li:last-child{border-bottom:none}
-  .qs li::before{content:counter(q);position:absolute;left:0;top:11px;width:23px;height:23px;
-    border-radius:50%;background:var(--green-soft);color:var(--green);font-size:11.5px;
-    font-weight:800;display:flex;align-items:center;justify-content:center}
-
-  footer{margin-top:60px;padding:28px 0 60px;border-top:1px solid var(--line);
-    font-size:12.5px;color:var(--muted);line-height:1.65}
-  footer a{color:var(--muted)}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<nav>
+  <div class="wrap">
+    <a href="#brief">The brief</a>
+    <a href="#options">All options</a>
+    <a href="#compare">Compare all</a>
+    <a href="cowarne.html">Little Cowarne Court</a>
+    <a href="hoegrange.html">Hoe Grange</a>
+    <a href="wooder.html">Wooder Manor</a>
+    <a href="lowcosta.html">Low Costa Mill</a>
+    <a href="burnfoot.html">Burnfoot</a>
+    <a href="westclose.html">West Close + Field Cottage</a>
+    <a href="longview.html">Long View Cottages</a>
+    <a href="trenarlett.html">Trenarlett Farm</a>
+    <a href="tregrehan.html">Tregrehan Garden Cottages</a>
+    <a href="harrods.html">Harrods Cornish Cottages</a>
+    <a href="helebarton.html">Hele Barton Farm</a>
+    <a href="airbnb.html">🏠 Airbnb</a>
+    <a href="#walks">🐕 Dog walks</a>
+    <a href="#out">Ruled out</a>
+    <a href="#ask">What to ask</a>
+  </div>
+</nav>
 
 <div class="hero">
   <div class="wrap">
@@ -191,26 +40,6 @@
     <div class="dates">Christmas week · roughly 21–28 December 2026</div>
   </div>
 </div>
-
-<nav>
-  <div class="wrap">
-    <a href="#brief">The brief</a>
-    <a href="#compare">Compare all</a>
-    <a href="#cowarne">Little Cowarne</a>
-    <a href="#hoegrange">Hoe Grange</a>
-    <a href="#wooder">Wooder Manor</a>
-    <a href="#lowcosta">Low Costa Mill</a>
-    <a href="#burnfoot">Burnfoot</a>
-    <a href="#westclose">West Close</a>
-    <a href="#longview">Long View</a>
-    <a href="#cornwall">🌊 Cornwall</a>
-    <a href="#walks">🐕 Dog walks</a>
-    <a href="#out">Ruled out</a>
-    <a href="#ask">What to ask</a>
-  </div>
-</nav>
-
-<!-- ============ BRIEF ============ -->
 <section id="brief">
 <div class="wrap">
   <h2>Who's going, and what we need</h2>
@@ -232,7 +61,116 @@
 </div>
 </section>
 
-<!-- ============ COMPARE ============ -->
+<section id="options">
+<div class="wrap">
+  <h2>All eleven options</h2>
+  <p class="lead">One page each — sleeping plan, map, what's nearby and open over Christmas, and the listing links.
+  Click any of them.</p>
+  <div class="cards">
+    <a class="card" href="cowarne.html">
+      <div class="rank">Option 1</div>
+      <h3>Little Cowarne Court</h3>
+      <p class="where">Little Cowarne, Herefordshire</p>
+      <p class="note">Best all-rounder. Award-winning pub walkable in the village. Nan&#x27;s shower room is adjacent, not en suite.</p>
+      <span class="p est">~£920–£1,730</span>
+    </a>
+    <a class="card" href="hoegrange.html">
+      <div class="rank">Option 2</div>
+      <h3>Hoe Grange</h3>
+      <p class="where">Brassington, Peak District</p>
+      <p class="note">Best for Nan by a distance — accessible en-suite wet room, level access, traffic-free trail across the farm&#x27;s own fields.</p>
+      <span class="p enq">On enquiry</span>
+    </a>
+    <a class="card" href="wooder.html">
+      <div class="rank">Option 3</div>
+      <h3>Wooder Manor</h3>
+      <p class="where">Widecombe-in-the-Moor, Dartmoor</p>
+      <p class="note">The only place Nan could realistically walk to a pub — half a level mile. But an unlit lane, and Dartmoor in December.</p>
+      <span class="p est">~£900–£1,600</span>
+    </a>
+    <a class="card" href="lowcosta.html">
+      <div class="rank">Option 4</div>
+      <h3>Low Costa Mill</h3>
+      <p class="where">Pickering, North Yorkshire</p>
+      <p class="note">Confirmed price, any changeover day, best area for things to do. Needs a third unit — Matthew has no bed otherwise.</p>
+      <span class="p conf">£1,700</span>
+    </a>
+    <a class="card" href="burnfoot.html">
+      <div class="rank">Option 5</div>
+      <h3>Burnfoot</h3>
+      <p class="where">Netherton, Northumberland</p>
+      <p class="note">Beautiful and very remote. Village pub closed permanently in 2023, and the highest snow risk on the list.</p>
+      <span class="p est">~£2,000–£2,800</span>
+    </a>
+    <a class="card" href="westclose.html">
+      <div class="rank">Option 6</div>
+      <h3>West Close + Field Cottage</h3>
+      <p class="where">Melmerby-in-Coverdale, Yorkshire Dales</p>
+      <p class="note">Cheapest by far and confirmed. No en suite anywhere, and a steep unlit lane with no flat option for Nan.</p>
+      <span class="p conf">£1,260</span>
+    </a>
+    <a class="card" href="longview.html">
+      <div class="rank">Option 7</div>
+      <h3>Long View Cottages</h3>
+      <p class="where">Much Marcle, Herefordshire</p>
+      <p class="note">The smartest house here, and the only option where the £4,000 budget is genuinely at risk. The A449 runs through the village.</p>
+      <span class="p est">£1,995+</span>
+    </a>
+    <a class="card" href="trenarlett.html">
+      <div class="rank">Option 8</div>
+      <h3>Trenarlett Farm</h3>
+      <p class="where">St Tudy, Cornwall</p>
+      <p class="note">Best in Cornwall. Both bedrooms ground floor and en suite, one a purpose-built wet room. Camel Trail 500m down a quiet lane.</p>
+      <span class="p est">~£900–£2,200</span>
+    </a>
+    <a class="card" href="tregrehan.html">
+      <div class="rank">Option 9</div>
+      <h3>Tregrehan Garden Cottages</h3>
+      <p class="where">Par, Cornwall</p>
+      <p class="note">Only Cornish option with a published festive rate. Eden Project a 20-minute walk. Nan alone downstairs.</p>
+      <span class="p conf">£1,540</span>
+    </a>
+    <a class="card" href="harrods.html">
+      <div class="rank">Option 10</div>
+      <h3>Harrods Cornish Cottages</h3>
+      <p class="where">Penhallow, near Truro</p>
+      <p class="note">A purpose-built accessible unit with hoist provision — but nothing but road walking on the A3075.</p>
+      <span class="p enq">On enquiry</span>
+    </a>
+    <a class="card" href="helebarton.html">
+      <div class="rank">Option 11</div>
+      <h3>Hele Barton Farm</h3>
+      <p class="where">Week St Mary, near Bude</p>
+      <p class="note">Up to 4 dogs, the most generous found. But Mowhay is upside-down — living room upstairs, which defeats the point for Nan.</p>
+      <span class="p enq">On enquiry</span>
+    </a>
+    <a class="card" href="airbnb.html">
+      <div class="rank">New</div>
+      <h3>Airbnb</h3>
+      <p class="where">Cornwall · 18 places</p>
+      <p class="note">The only source that confirms availability for our exact dates. Single houses though — no separate building for the aunt and uncle.</p>
+      <span class="p conf">£1,467–£3,075 confirmed</span>
+    </a>
+  </div>
+
+  <h3 style="margin-top:34px">On Cornwall</h3>
+  <div class="panel" style="margin-bottom:26px">
+    <p style="margin:0 0 10px;font-size:15.5px"><strong>Good news — Cornwall works better than I expected.</strong> The pattern that solves our problem is small <em>farm cottage clusters</em>: four or five converted barns round one yard, booked individually. Because they're barn conversions they tend to be single storey, which is exactly what Nan needs, and farm owners are usually relaxed about two dogs.</p>
+    <p class="note" style="margin:0">The south coast strip — Looe, Fowey, the Roseland — turned up plenty of two-dog cottages but almost nothing with a ground-floor bedroom in a two-building site. Everything below is north coast, mid-Cornwall or inland.</p>
+  </div>
+  <div class="panel">
+    <h4>Three more Cornish sites worth a call</h4>
+    <ul class="facts">
+      <li class="f-y"><strong>Cory Farm, Morwenstow (nr Bude)</strong> — Marsland Cottage sleeps 6 with <em>all three bedrooms downstairs</em> and an en-suite master, 2 dogs. All four of us on one level, aunt and uncle in Welcombe or Stanbury. Remote though — Bude is 25 minutes. <a href="https://www.holidaycottages.co.uk/cottage/424-cory-farm-marsland-cottage" target="_blank" rel="noopener">Listing ↗</a></li>
+      <li class="f-y"><strong>Treligga Farm, nr Port Isaac</strong> — the cheapest of the lot at roughly £1,400–£2,200 with published rates. Swallows is all ground floor with a wet room and a hot tub; Stable next door sleeps 2. Catch: no en suite, and the second bedroom is bunks. <a href="https://www.cottages.com/cottages/treligga-farm-cottages-swallows-30109" target="_blank" rel="noopener">Listing ↗</a></li>
+      <li class="f-m"><strong>Talehay, Pelynt (nr Looe)</strong> — cheapest of all at about £1,625, and the closest to Polperro and Looe. But the two listing sites disagree about which floor Owl Cottage's bedrooms are on, so it needs confirming before anything else. <a href="https://www.talehay.co.uk/" target="_blank" rel="noopener">Website ↗</a></li>
+    </ul>
+    <p class="note"><strong>Ruled out in Cornwall:</strong> Boscrowan Farm and Downs Barn Farm (no pets at all), The Barn at Constantine and Courtyard Farm at Boscastle (1 dog only), Bosinver near St Austell (dogs only in selected cottages at certain times of year), and Pen Den Har at Kingsand — great layout, but it sleeps 12 and starts at £2,621 a week before the Christmas premium.</p>
+  </div>
+
+</div>
+</section>
+
 <section id="compare">
 <div class="wrap">
   <h2>All eleven at a glance</h2>
@@ -306,659 +244,6 @@
   <p class="note">Only a handful have a published Christmas 2026 price — the rest quote a "from" rate and need a phone call. Nothing here is confirmed as available yet. <br>*Tregrehan's £1,540 is the main cottage only; the second cottage is an estimate.</p>
 </div>
 </section>
-
-<!-- ============ 1. LITTLE COWARNE COURT ============ -->
-<section id="cowarne">
-<div class="wrap">
-  <h2>Option 1</h2>
-  <div class="prop pick">
-    <div class="phead">
-      <span class="badge b-green">Best all-rounder</span>
-      <h3>Little Cowarne Court</h3>
-      <p class="loc">Little Cowarne, near Bromyard, Herefordshire · <strong>The Stables</strong> + <strong>The Loft</strong> · part of Durstone Farm Cottages</p>
-      <div class="price-tag est">~£920–£1,730 <small>for both · Christmas rate not published</small></div>
-    </div>
-
-    <div class="gal">
-      <img loading="lazy" src="https://www.independentcottages.co.uk/gallery/2160/frontpic_1667380806.jpg" alt="The Stables exterior" onerror="this.outerHTML='&lt;div class=\'ph\'&gt;Photo — see listing&lt;/div&gt;'">
-      <img loading="lazy" src="https://www.independentcottages.co.uk/gallery/2160/1667380871.jpg" alt="The Stables interior" onerror="this.remove()">
-      <img loading="lazy" src="https://www.independentcottages.co.uk/gallery/2160/1667380974.jpg" alt="The Stables living room" onerror="this.remove()">
-      <img loading="lazy" src="https://www.independentcottages.co.uk/gallery/2160/1667381072.jpg" alt="The Stables bedroom" onerror="this.remove()">
-      <img loading="lazy" src="https://www.independentcottages.co.uk/gallery/2160/view.jpg" alt="View from Little Cowarne Court" onerror="this.remove()">
-      <img loading="lazy" src="https://www.independentcottages.co.uk/gallery/5025/1667379604.jpg" alt="The Loft" onerror="this.remove()">
-      <img loading="lazy" src="https://www.independentcottages.co.uk/gallery/5025/1667379685.jpg" alt="The Loft interior" onerror="this.remove()">
-    </div>
-
-    <div class="pbody">
-      <div class="grid2">
-        <div>
-          <h4>Who sleeps where</h4>
-          <table class="sleep">
-            <thead><tr><th>Person</th><th>Room</th><th>Building</th></tr></thead>
-            <tbody>
-              <tr><td class="who">Nan</td><td><span class="gf">Downstairs bedroom</span> — twin beds zipped together into a superking. Shower room &amp; WC on the same floor, and nobody else needs it.</td><td><span class="bld main">The Stables</span></td></tr>
-              <tr><td class="who">Mum &amp; Dad</td><td>Upstairs bedroom, twin beds zipped into a double</td><td><span class="bld main">The Stables</span></td></tr>
-              <tr><td class="who">Matthew</td><td>Second upstairs bedroom</td><td><span class="bld main">The Stables</span></td></tr>
-              <tr><td class="who">🐕 🐕 <span class="tag">Both dogs</span></td><td>2 dogs welcome — confirmed</td><td><span class="bld main">The Stables</span></td></tr>
-              <tr><td class="who">Aunt &amp; Uncle</td><td>King bed (or twin), with a bath <em>and</em> a wet-room shower</td><td><span class="bld annexe">The Loft</span></td></tr>
-            </tbody>
-          </table>
-          <p class="note">The Stables sleeps 6 in 3 bedrooms, so there's a spare room even with all four of us in it.</p>
-        </div>
-        <div>
-          <h4>Where it is</h4>
-          <iframe class="map" loading="lazy" title="Map of Little Cowarne, Herefordshire"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-2.598,52.142,-2.538,52.182&layer=mapnik&marker=52.162,-2.568"></iframe>
-          <a class="maplink" href="https://www.openstreetmap.org/?mlat=52.162&mlon=-2.568#map=13/52.162/-2.568" target="_blank" rel="noopener">Open bigger map ↗</a>
-
-          <h4 style="margin-top:20px">The area</h4>
-          <ul class="facts">
-            <li class="f-y">Award-winning pub in the village — genuinely walkable</li>
-            <li class="f-y">Bromyard, Hereford and the Malverns all a short drive</li>
-            <li class="f-y">Hereford Cathedral (the Mappa Mundi) is open 27–31 Dec, warm and step-free</li>
-            <li class="f-y">Symonds Yat Rock — a 200-metre surfaced path to a huge view, benches on the way. Nan could do this one</li>
-            <li class="f-m">Christmas price not published — needs a call</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="flag"><b>Worth knowing:</b> Nan's shower room is next door to her bedroom rather than strictly en suite — but it's on the ground floor and no one else in the cottage would be using it. There's also a fully wheelchair-accessible unit on site (The Tack Room) if we wanted to swap.</div>
-
-      <div class="links">
-        <a class="btn pri" href="https://www.independentcottages.co.uk/herefordshire/the-stables-ref2160" target="_blank" rel="noopener">The Stables — full listing ↗</a>
-        <a class="btn" href="https://www.independentcottages.co.uk/herefordshire/the-loft-ref5025" target="_blank" rel="noopener">The Loft ↗</a>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- ============ 2. HOE GRANGE ============ -->
-<section id="hoegrange">
-<div class="wrap">
-  <h2>Option 2</h2>
-  <div class="prop pick">
-    <div class="phead">
-      <span class="badge b-green">Best for Nan</span>
-      <h3>Hoe Grange Holidays</h3>
-      <p class="loc">Brassington, Peak District, Derbyshire · two detached log cabins</p>
-      <div class="price-tag est">Price on enquiry <small>· not published online</small></div>
-    </div>
-
-    <div class="gal">
-      <img loading="lazy" src="https://www.hoegrangeholidays.co.uk/wp-content/uploads/2025/01/ACT_Rainster_external-1edit-1920-x-900-banner.jpg" alt="Rainster cabin exterior" onerror="this.outerHTML='&lt;div class=\'ph\'&gt;Photo — see website&lt;/div&gt;'">
-      <img loading="lazy" src="https://www.hoegrangeholidays.co.uk/wp-content/uploads/2019/07/ACT_Rainster_external-3-web-darker.jpg" alt="Rainster cabin" onerror="this.remove()">
-      <img loading="lazy" src="https://www.hoegrangeholidays.co.uk/wp-content/uploads/2019/07/ACT_Rainster_decking_view-from-the-French-doors-web.jpg" alt="View from the cabin" onerror="this.remove()">
-    </div>
-
-    <div class="pbody">
-      <div class="grid2">
-        <div>
-          <h4>Who sleeps where</h4>
-          <table class="sleep">
-            <thead><tr><th>Person</th><th>Room</th><th>Building</th></tr></thead>
-            <tbody>
-              <tr><td class="who">Nan</td><td><span class="gf">Twin room with a proper accessible en-suite wet room.</span> Whole cabin is single storey with level access from the car park — no steps at any point</td><td><span class="bld main">Rainster cabin</span></td></tr>
-              <tr><td class="who">Mum &amp; Dad</td><td>Superking master bedroom</td><td><span class="bld main">Rainster cabin</span></td></tr>
-              <tr><td class="who">🐕 🐕 <span class="tag">Both dogs</span></td><td>2 dogs per cabin — confirmed</td><td><span class="bld main">Rainster cabin</span></td></tr>
-              <tr><td class="who">Aunt &amp; Uncle</td><td>Superking master in the second cabin</td><td><span class="bld annexe">Hipley cabin</span></td></tr>
-              <tr><td class="who">Matthew</td><td>Twin room in the second cabin</td><td><span class="bld annexe">Hipley cabin</span></td></tr>
-            </tbody>
-          </table>
-          <p class="note">Both cabins sleep 4, so 3 + 3 fits comfortably with a spare bed in each.</p>
-        </div>
-        <div>
-          <h4>Where it is</h4>
-          <iframe class="map" loading="lazy" title="Map of Brassington, Peak District"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-1.671,53.060,-1.611,53.100&layer=mapnik&marker=53.080,-1.641"></iframe>
-          <a class="maplink" href="https://www.openstreetmap.org/?mlat=53.080&mlon=-1.641#map=13/53.080/-1.641" target="_blank" rel="noopener">Open bigger map ↗</a>
-
-          <h4 style="margin-top:20px">The area</h4>
-          <ul class="facts">
-            <li class="f-y">The High Peak Trail runs from the door — flat, surfaced old railway line, perfect for the dogs and doable for Nan</li>
-            <li class="f-y">Carsington Water about a mile away</li>
-            <li class="f-y">Chatsworth does a big Christmas display; Bakewell, Matlock and Ashbourne all close by</li>
-            <li class="f-y">Genuinely the best accessibility on the list — profiling bed and a wash-dry toilet available on request</li>
-            <li class="f-n">Brassington's pubs are 1.5 miles — a drive, not a walk</li>
-            <li class="f-m">No prices online at all — we'd be going in blind until we ring</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="flag"><b>Why this one's different:</b> everywhere else we're working around Nan's mobility. Here the cabin is actually built for it — level parking, ramps, a wet room she can wheel into. If Nan's knees are the thing we're most worried about, this is the pick.</div>
-
-      <div class="links">
-        <a class="btn pri" href="https://www.hoegrangeholidays.co.uk/log-cabins-peak-district/rainster-log-cabin/" target="_blank" rel="noopener">Rainster cabin ↗</a>
-        <a class="btn" href="https://www.hoegrangeholidays.co.uk/" target="_blank" rel="noopener">Hoe Grange website ↗</a>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- ============ 3. WOODER MANOR ============ -->
-<section id="wooder">
-<div class="wrap">
-  <h2>Option 3</h2>
-  <div class="prop pick">
-    <div class="phead">
-      <span class="badge b-green">Best pub walk</span>
-      <h3>Wooder Manor Cottages</h3>
-      <p class="loc">Widecombe-in-the-Moor, Dartmoor, Devon · <strong>Lower Hameldown</strong> + <strong>Lower Chinkwell</strong></p>
-      <div class="price-tag est">~£900–£1,600 <small>for both · Christmas rate on enquiry</small></div>
-    </div>
-
-    <div class="gal">
-      <img loading="lazy" src="https://www.woodermanor.com/wp-content/uploads/2018/03/DSC_0079-1116x462.jpg" alt="Wooder Manor" onerror="this.outerHTML='&lt;div class=\'ph\'&gt;Photo — see website&lt;/div&gt;'">
-      <img loading="lazy" src="https://www.woodermanor.com/wp-content/uploads/2018/05/1013863_366055270199334_1189279475_n.jpg" alt="Wooder Manor courtyard" onerror="this.remove()">
-      <img loading="lazy" src="https://www.woodermanor.com/wp-content/uploads/2018/03/wooder2.png" alt="Wooder Manor cottages" onerror="this.remove()">
-    </div>
-
-    <div class="pbody">
-      <div class="grid2">
-        <div>
-          <h4>Who sleeps where</h4>
-          <table class="sleep">
-            <thead><tr><th>Person</th><th>Room</th><th>Building</th></tr></thead>
-            <tbody>
-              <tr><td class="who">Nan</td><td><span class="gf">Ground-floor double with an en-suite wheel-in shower</span></td><td><span class="bld main">Lower Hameldown</span></td></tr>
-              <tr><td class="who">Mum &amp; Dad</td><td>Second double, up two steps, en suite with a bath</td><td><span class="bld main">Lower Hameldown</span></td></tr>
-              <tr><td class="who">🐕 🐕 <span class="tag">Both dogs</span></td><td>2 dogs — confirmed</td><td><span class="bld main">Lower Hameldown</span></td></tr>
-              <tr><td class="who">Aunt &amp; Uncle</td><td>Double, all on one level</td><td><span class="bld annexe">Lower Chinkwell</span></td></tr>
-              <tr><td class="who">Matthew</td><td>Twin room, same cottage</td><td><span class="bld annexe">Lower Chinkwell</span></td></tr>
-            </tbody>
-          </table>
-          <p class="note">Five cottages round one courtyard, so the two buildings are a few yards apart.</p>
-        </div>
-        <div>
-          <h4>Where it is</h4>
-          <iframe class="map" loading="lazy" title="Map of Widecombe-in-the-Moor, Dartmoor"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-3.840,50.557,-3.780,50.597&layer=mapnik&marker=50.577,-3.810"></iframe>
-          <a class="maplink" href="https://www.openstreetmap.org/?mlat=50.577&mlon=-3.810#map=13/50.577/-3.810" target="_blank" rel="noopener">Open bigger map ↗</a>
-
-          <h4 style="margin-top:20px">The area</h4>
-          <ul class="facts">
-            <li class="f-y">Half a <em>level</em> mile into Widecombe — two pubs, two cafés and the church. The only place on this list where Nan could realistically walk to the pub</li>
-            <li class="f-y">Classic picture-postcard Dartmoor village</li>
-            <li class="f-y">Buckfastleigh steam railway, Buckfast Abbey, Bovey Tracey and Ashburton all nearby</li>
-            <li class="f-y">Both cottages have en suites — unusual at this price</li>
-            <li class="f-m">Two listing sites disagree about Lower Chinkwell's layout — need to confirm which is right</li>
-            <li class="f-m">Christmas rate not published</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="flag"><b>The trade-off:</b> Dartmoor in late December can be properly wild, and the lanes in are narrow. But being able to walk to a pub on the flat is worth a lot over a long Christmas week.</div>
-
-      <div class="links">
-        <a class="btn pri" href="https://www.woodermanor.com/" target="_blank" rel="noopener">Wooder Manor website ↗</a>
-        <a class="btn" href="https://www.independentcottages.co.uk/dartmoor/wooder-manor-holiday-cottages-ref3637" target="_blank" rel="noopener">Listing ↗</a>
-        <a class="btn" href="tel:+441364621391">Call 01364 621391</a>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- ============ 4. LOW COSTA MILL ============ -->
-<section id="lowcosta">
-<div class="wrap">
-  <h2>Option 4</h2>
-  <div class="prop">
-    <div class="phead">
-      <span class="badge b-green">Most to do · price confirmed</span>
-      <h3>Low Costa Mill</h3>
-      <p class="loc">Costa Lane, Pickering, North Yorkshire · <strong>Farrier's Cottage</strong> + <strong>Carter's Cottage</strong></p>
-      <div class="price-tag">£1,700 <small>· £1,075 + £625, published Christmas rate</small></div>
-    </div>
-
-    <div class="gal">
-      <img loading="lazy" src="https://www.independentcottages.co.uk/gallery/4985/1631017179.jpg" alt="Farrier's Cottage" onerror="this.outerHTML='&lt;div class=\'ph\'&gt;Photo — see listing&lt;/div&gt;'">
-      <img loading="lazy" src="https://www.independentcottages.co.uk/gallery/4985/1631017232.jpg" alt="Farrier's interior" onerror="this.remove()">
-      <img loading="lazy" src="https://www.independentcottages.co.uk/gallery/4985/1631017195.jpg" alt="Farrier's living room" onerror="this.remove()">
-      <img loading="lazy" src="https://www.independentcottages.co.uk/gallery/4982/frontpic_1631004668.jpg" alt="Carter's Cottage" onerror="this.remove()">
-      <img loading="lazy" src="https://www.independentcottages.co.uk/gallery/4982/1631004692.jpg" alt="Carter's interior" onerror="this.remove()">
-      <img loading="lazy" src="https://lowcostamill.co.uk/wp-content/uploads/2019/02/Low-Costa-Mill-Pool-1.jpg" alt="Indoor pool" onerror="this.remove()">
-      <img loading="lazy" src="https://lowcostamill.co.uk/wp-content/uploads/2019/02/Low-Costa-Mill-Site.jpg" alt="Low Costa Mill site" onerror="this.remove()">
-    </div>
-
-    <div class="pbody">
-      <div class="grid2">
-        <div>
-          <h4>Who sleeps where</h4>
-          <table class="sleep">
-            <thead><tr><th>Person</th><th>Room</th><th>Building</th></tr></thead>
-            <tbody>
-              <tr><td class="who">Nan</td><td><span class="gf">Ground-floor double.</span> The whole cottage is on one level — no stairs anywhere</td><td><span class="bld main">Farrier's</span></td></tr>
-              <tr><td class="who">Mum &amp; Dad</td><td>Ground-floor twin, two full-size singles</td><td><span class="bld main">Farrier's</span></td></tr>
-              <tr><td class="who">🐕 🐕 <span class="tag">Both dogs</span></td><td>2 dogs — confirmed</td><td><span class="bld main">Farrier's</span></td></tr>
-              <tr><td class="who">Aunt &amp; Uncle</td><td>King (or twin), ground floor, walk-in shower <em>and</em> a separate bath</td><td><span class="bld annexe">Carter's</span></td></tr>
-              <tr><td class="who">Matthew</td><td style="color:var(--red)"><strong>No bed in this combination</strong> — we'd need a third cottage. There are 7 on site, so likely fine, but it needs asking</td><td><span class="bld">?</span></td></tr>
-            </tbody>
-          </table>
-          <p class="note">Christmas period is 22 Dec–3 Jan, any changeover day, minimum 4 nights — the most flexible dates of anything here.</p>
-        </div>
-        <div>
-          <h4>Where it is</h4>
-          <iframe class="map" loading="lazy" title="Map of Pickering, North Yorkshire"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.813,54.213,-0.753,54.253&layer=mapnik&marker=54.233,-0.783"></iframe>
-          <a class="maplink" href="https://www.openstreetmap.org/?mlat=54.233&mlon=-0.783#map=13/54.233/-0.783" target="_blank" rel="noopener">Open bigger map ↗</a>
-
-          <h4 style="margin-top:20px">The area</h4>
-          <ul class="facts">
-            <li class="f-y">Far and away the most open between Christmas and New Year</li>
-            <li class="f-y">North Yorkshire Moors Railway runs steam trains to Whitby daily from 27 Dec</li>
-            <li class="f-y">Castle Howard is open 27–31 Dec, dressed for Christmas — level entry, wheelchairs to borrow free, dogs welcome in the gardens</li>
-            <li class="f-y">Whitby Abbey, Scarborough Castle and Rievaulx all open daily 27 Dec–1 Jan</li>
-            <li class="f-y">Dalby Forest has a flat 0.6km boardwalk round the lake, plus all-terrain scooters to hire</li>
-            <li class="f-y">Heated indoor pool, enclosed dog paddock and 10 acres on site</li>
-            <li class="f-n">1.5 miles into Pickering — no pub within walking distance</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="flag"><b>The catch:</b> Farrier's and Carter's together only sleep 6 in the wrong shape — Nan, Mum and Dad fill the main cottage and Carter's is a one-bedroom. Matthew needs a third unit. First question for the owners: <em>what else have you got free that week?</em></div>
-
-      <div class="links">
-        <a class="btn pri" href="https://www.lowcostamill.co.uk/" target="_blank" rel="noopener">Low Costa Mill website ↗</a>
-        <a class="btn" href="https://www.independentcottages.co.uk/north_york_moors/farriers-cottage-ref4985" target="_blank" rel="noopener">Farrier's ↗</a>
-        <a class="btn" href="https://www.independentcottages.co.uk/north_york_moors/carters-cottage-ref4982" target="_blank" rel="noopener">Carter's ↗</a>
-        <a class="btn" href="https://www.independentcottages.co.uk/north_york_moors/thresher-cottage-ref4986" target="_blank" rel="noopener">Thresher ↗</a>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- ============ 5. BURNFOOT ============ -->
-<section id="burnfoot">
-<div class="wrap">
-  <h2>Option 5</h2>
-  <div class="prop">
-    <div class="phead">
-      <span class="badge b-amber">Beautiful but remote</span>
-      <h3>Burnfoot Holiday Cottages</h3>
-      <p class="loc">Netherton, Northumberland National Park · <strong>The Forge</strong> + a second cottage</p>
-      <div class="price-tag est">~£2,000–£2,800 <small>· estimated, Christmas rate not published</small></div>
-    </div>
-
-    <div class="pbody">
-      <div class="grid2">
-        <div>
-          <h4>Who sleeps where</h4>
-          <table class="sleep">
-            <thead><tr><th>Person</th><th>Room</th><th>Building</th></tr></thead>
-            <tbody>
-              <tr><td class="who">Nan</td><td><span class="gf">King-size master with en suite</span> — single-level living, but confirm the bedroom itself is ground floor</td><td><span class="bld main">The Forge</span></td></tr>
-              <tr><td class="who">Mum &amp; Dad</td><td>Twin made up as a king double</td><td><span class="bld main">The Forge</span></td></tr>
-              <tr><td class="who">Matthew</td><td>Second twin bedroom</td><td><span class="bld main">The Forge</span></td></tr>
-              <tr><td class="who">🐕 🐕 <span class="tag">Both dogs</span></td><td>2 dogs — £45 for the pair</td><td><span class="bld main">The Forge</span></td></tr>
-              <tr><td class="who">Aunt &amp; Uncle</td><td>Own cottage — Kingfisher (sleeps 3) or Wagtail (sleeps 2)</td><td><span class="bld annexe">2nd cottage</span></td></tr>
-            </tbody>
-          </table>
-          <p class="note">Ten cottages on one estate, so there's plenty of choice for the second building. Sister cottage <em>Gardeners</em> has level access throughout and no steps from the parking — worth asking which suits Nan best.</p>
-        </div>
-        <div>
-          <h4>Where it is</h4>
-          <iframe class="map" loading="lazy" title="Map of Netherton, Northumberland"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-2.043,55.293,-1.983,55.333&layer=mapnik&marker=55.313,-2.013"></iframe>
-          <a class="maplink" href="https://www.openstreetmap.org/?mlat=55.313&mlon=-2.013#map=13/55.313/-2.013" target="_blank" rel="noopener">Open bigger map ↗</a>
-
-          <h4 style="margin-top:20px">The area</h4>
-          <ul class="facts">
-            <li class="f-y">Cragside's six-mile carriage drive is done <em>in your own car</em>, with lay-bys and viewpoints — no walking needed at all</li>
-            <li class="f-y">Alnwick Garden Winter Lights runs 20 Nov–3 Jan, with free wheelchair and scooter hire</li>
-            <li class="f-y">Dark Sky Park — you can stargaze from the doorstep</li>
-            <li class="f-y">Barter Books in Alnwick: enormous secondhand bookshop with open fires</li>
-            <li class="f-n">The village pub closed for good in 2023 — nearest open pub is a drive</li>
-            <li class="f-n">Alnwick Castle is shut for the winter from late October</li>
-            <li class="f-n">Highest snow risk of anywhere here — unlit upland lanes, low gritting priority</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="flag"><b>Be honest with ourselves about this one:</b> it's stunning, and completely remote. No pub within walking distance, an hour's round trip to a big supermarket, and if it snows we could be stuck for a day or two. Great if "log fire and nobody around" is the actual point.</div>
-
-      <div class="links">
-        <a class="btn pri" href="https://www.groupaccommodation.com/properties/burnfoot-holiday-cottages-morpeth-northumberland" target="_blank" rel="noopener">The whole estate ↗</a>
-        <a class="btn" href="https://www.independentcottages.co.uk/northumberland_national_park/the-forge-ref3079" target="_blank" rel="noopener">The Forge ↗</a>
-        <a class="btn" href="tel:+441912811900">Call 0191 281 1900</a>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- ============ 6. WEST CLOSE ============ -->
-<section id="westclose">
-<div class="wrap">
-  <h2>Option 6</h2>
-  <div class="prop">
-    <div class="phead">
-      <span class="badge b-amber">Cheapest by miles</span>
-      <h3>West Close + Field Cottage</h3>
-      <p class="loc">Melmerby-in-Coverdale, near Leyburn, Yorkshire Dales</p>
-      <div class="price-tag">£1,260 <small>· £630 each, published Christmas rate</small></div>
-    </div>
-
-    <div class="pbody">
-      <div class="grid2">
-        <div>
-          <h4>Who sleeps where</h4>
-          <table class="sleep">
-            <thead><tr><th>Person</th><th>Room</th><th>Building</th></tr></thead>
-            <tbody>
-              <tr><td class="who">Nan</td><td><span class="gf">Double bedroom — single-storey stone building, no stairs</span></td><td><span class="bld main">West Close</span></td></tr>
-              <tr><td class="who">Mum &amp; Dad</td><td>Twin room, same level</td><td><span class="bld main">West Close</span></td></tr>
-              <tr><td class="who">🐕 🐕 <span class="tag">Both dogs</span></td><td>Max 2 per cottage — confirmed</td><td><span class="bld main">West Close</span></td></tr>
-              <tr><td class="who">Aunt &amp; Uncle</td><td>Double bedroom</td><td><span class="bld annexe">Field Cottage</span></td></tr>
-              <tr><td class="who">Matthew</td><td>Twin room, same cottage</td><td><span class="bld annexe">Field Cottage</span></td></tr>
-            </tbody>
-          </table>
-          <p class="note">Both barns sit at West Close Farmhouse sharing a garden. Christmas rate band runs 19 Dec–8 Jan.</p>
-        </div>
-        <div>
-          <h4>Where it is</h4>
-          <iframe class="map" loading="lazy" title="Map of Melmerby, Coverdale"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-1.913,54.233,-1.853,54.273&layer=mapnik&marker=54.253,-1.883"></iframe>
-          <a class="maplink" href="https://www.openstreetmap.org/?mlat=54.253&mlon=-1.883#map=13/54.253/-1.883" target="_blank" rel="noopener">Open bigger map ↗</a>
-
-          <h4 style="margin-top:20px">The area</h4>
-          <ul class="facts">
-            <li class="f-y">£1,260 leaves nearly £2,750 of the budget unspent</li>
-            <li class="f-y">Aysgarth Falls has a proper accessible route — compacted path, gentle gradients, a wheelchair viewing platform and all-terrain scooters to hire</li>
-            <li class="f-y">Leyburn 4½ miles for shops; Middleham's racehorses on the gallops are free to watch from the car</li>
-            <li class="f-y">Wensleydale Railway runs Mince Pie Specials between Christmas and New Year from Leyburn</li>
-            <li class="f-n">No en suite in either cottage</li>
-            <li class="f-n">Nearest pub is half a mile up an unlit single-track hill — not walkable for Nan</li>
-            <li class="f-n">Bolton Castle and the Forbidden Corner are both shut for our week</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="flag"><b>Two things to weigh:</b> Field Cottage's bedrooms are up a short stairway, so the aunt and uncle get stairs (fine). And the road up Coverdale is one of the first in the Dales to close in snow — the safe route in and out is east via Middleham, not over the top to Kettlewell whatever the satnav says.</div>
-
-      <div class="links">
-        <a class="btn pri" href="https://www.independentcottages.co.uk/yorkshire_dales/west-close-cottage-ref2282" target="_blank" rel="noopener">West Close Cottage ↗</a>
-        <a class="btn" href="https://www.independentcottages.co.uk/yorkshire_dales/field-cottage-ref2283" target="_blank" rel="noopener">Field Cottage ↗</a>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- ============ 7. LONG VIEW ============ -->
-<section id="longview">
-<div class="wrap">
-  <h2>Option 7</h2>
-  <div class="prop">
-    <div class="phead">
-      <span class="badge b-amber">Smartest — and priciest</span>
-      <h3>Long View Cottages</h3>
-      <p class="loc">Much Marcle, Herefordshire · <strong>Hill View House</strong> + <strong>Stone Cottage</strong></p>
-      <div class="price-tag est">From £1,995/wk for the house alone <small>· Christmas could push past £4,000</small></div>
-    </div>
-
-    <div class="pbody">
-      <div class="grid2">
-        <div>
-          <h4>Who sleeps where</h4>
-          <table class="sleep">
-            <thead><tr><th>Person</th><th>Room</th><th>Building</th></tr></thead>
-            <tbody>
-              <tr><td class="who">Nan</td><td><span class="gf">Downstairs king bedroom with its own wet room</span> — described as wheelchair accessible</td><td><span class="bld main">Hill View House</span></td></tr>
-              <tr><td class="who">Mum &amp; Dad</td><td>Upstairs superking, en suite</td><td><span class="bld main">Hill View House</span></td></tr>
-              <tr><td class="who">Matthew</td><td>Another upstairs en-suite room — there are five bedrooms and five bathrooms</td><td><span class="bld main">Hill View House</span></td></tr>
-              <tr><td class="who">🐕 🐕 <span class="tag">Both dogs</span></td><td>2 dogs, £50</td><td><span class="bld main">Hill View House</span></td></tr>
-              <tr><td class="who">Aunt &amp; Uncle</td><td>Mezzanine bedroom with en suite, own garden and parking</td><td><span class="bld annexe">Stone Cottage</span></td></tr>
-            </tbody>
-          </table>
-          <p class="note">5-star Gold rated. Hill View sleeps 10, so we'd be paying for four bedrooms we don't need.</p>
-        </div>
-        <div>
-          <h4>Where it is</h4>
-          <iframe class="map" loading="lazy" title="Map of Much Marcle, Herefordshire"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-2.563,51.968,-2.503,52.008&layer=mapnik&marker=51.988,-2.533"></iframe>
-          <a class="maplink" href="https://www.openstreetmap.org/?mlat=51.988&mlon=-2.533#map=13/51.988/-2.533" target="_blank" rel="noopener">Open bigger map ↗</a>
-
-          <h4 style="margin-top:20px">The area</h4>
-          <ul class="facts">
-            <li class="f-y">Three pubs in the village — the Royal Oak welcomes dogs in all areas and has a dog menu</li>
-            <li class="f-y">Ledbury 5 miles, Ross-on-Wye 7, Hereford 14 — the best-connected spot on the list</li>
-            <li class="f-y">Symonds Yat Rock: 200 flat surfaced metres to a spectacular Wye gorge view</li>
-            <li class="f-y">Westons Cider is in the village, with a restaurant and outdoor dining pods</li>
-            <li class="f-n">No village shop — it closed in 2019, so it's Ledbury for milk</li>
-            <li class="f-n">Hellens Manor, Eastnor Castle and Puzzlewood are all closed for winter</li>
-            <li class="f-m">The only option where £4,000 is genuinely at risk</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="links">
-        <a class="btn pri" href="https://www.groupaccommodation.com/properties/long-view-cottages-much-marcle-herefordshire" target="_blank" rel="noopener">Long View Cottages ↗</a>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- ============ CORNWALL ============ -->
-<section id="cornwall">
-<div class="wrap">
-  <h2>Cornwall</h2>
-  <div class="panel" style="margin-bottom:26px">
-    <p style="margin:0 0 10px;font-size:15.5px"><strong>Good news — Cornwall works better than I expected.</strong> The pattern that solves our problem is small <em>farm cottage clusters</em>: four or five converted barns round one yard, booked individually. Because they're barn conversions they tend to be single storey, which is exactly what Nan needs, and farm owners are usually relaxed about two dogs.</p>
-    <p class="note" style="margin:0">The south coast strip — Looe, Fowey, the Roseland — turned up plenty of two-dog cottages but almost nothing with a ground-floor bedroom in a two-building site. Everything below is north coast, mid-Cornwall or inland.</p>
-  </div>
-
-  <!-- Trenarlett -->
-  <div class="prop pick" id="trenarlett">
-    <div class="phead">
-      <span class="badge b-green">Best in Cornwall</span>
-      <h3>Trenarlett Farm</h3>
-      <p class="loc">St Tudy / St Breward, near Wadebridge · <strong>Dickins' Cottage</strong> + <strong>Barney's Cottage</strong></p>
-      <div class="price-tag est">~£900–£2,200 <small>for both · Christmas rate not published</small></div>
-    </div>
-    <div class="pbody">
-      <div class="grid2">
-        <div>
-          <h4>Who sleeps where</h4>
-          <table class="sleep">
-            <thead><tr><th>Person</th><th>Room</th><th>Building</th></tr></thead>
-            <tbody>
-              <tr><td class="who">Nan</td><td><span class="gf">Ground-floor twin (or superking) with an en-suite accessible wet room</span> — level shower, grab rails, raised toilet. Whole cottage is single storey</td><td><span class="bld main">Dickins'</span></td></tr>
-              <tr><td class="who">Mum &amp; Dad</td><td>Ground-floor superking, en suite with bath and shower</td><td><span class="bld main">Dickins'</span></td></tr>
-              <tr><td class="who">🐕 🐕 <span class="tag">Both dogs</span></td><td>3–4 dogs allowed — the most generous in Cornwall</td><td><span class="bld main">Dickins'</span></td></tr>
-              <tr><td class="who">Aunt &amp; Uncle</td><td>Superking, single storey, en-suite wet room with a double-ended bath</td><td><span class="bld annexe">Barney's</span></td></tr>
-              <tr><td class="who">Matthew</td><td>Sofa bed in Barney's, or one of the four other cottages on the farm</td><td><span class="bld annexe">Barney's</span></td></tr>
-            </tbody>
-          </table>
-          <p class="note">Both cottages are explicitly "designed to be disabled friendly" — wide doorways, mobility thresholds, level access, and a rise-recline chair or shower chair on request.</p>
-        </div>
-        <div>
-          <h4>Where it is</h4>
-          <iframe class="map" loading="lazy" title="Map of St Tudy, Cornwall"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-4.783,50.521,-4.723,50.561&layer=mapnik&marker=50.541,-4.753"></iframe>
-          <a class="maplink" href="https://www.openstreetmap.org/?mlat=50.541&mlon=-4.753#map=13/50.541/-4.753" target="_blank" rel="noopener">Open bigger map ↗</a>
-          <h4 style="margin-top:20px">The area</h4>
-          <ul class="facts">
-            <li class="f-y">The only place anywhere on this list where <em>both</em> bedrooms in the main cottage are ground floor <em>and</em> both en suite</li>
-            <li class="f-y">Dog walking field on site; the Camel Trail runs past the bottom of the farm</li>
-            <li class="f-y">St Tudy, Blisland and St Breward each 1½–2 miles, each with a shop, post office and pub</li>
-            <li class="f-y">Port Isaac 9 miles, Padstow 16, Bodmin Moor on the doorstep</li>
-            <li class="f-n">Inland — no walkable pub, and no sea view</li>
-            <li class="f-m">Christmas price not published; the two agencies quote different dog limits (3 vs 4)</li>
-          </ul>
-        </div>
-      </div>
-      <div class="flag"><b>Why it wins on paper:</b> everywhere else we're compromising on one of Nan's three needs — ground floor, en suite, step-free. Trenarlett is the only Cornish option that gives all three, in a purpose-built accessible wet room, with room for two dogs. The cost is location: it's farmland, not coast.</div>
-      <div class="links">
-        <a class="btn pri" href="https://www.trenarlett.com/cottages" target="_blank" rel="noopener">Trenarlett Farm website ↗</a>
-        <a class="btn" href="https://www.cornishhorizons.co.uk/cottage/oc-5942-dickins-cottage-trenarlett-farm" target="_blank" rel="noopener">Dickins' Cottage ↗</a>
-        <a class="btn" href="https://www.cornishhorizons.co.uk/cottage/oc-10392-barneys-cottage-trenarlett-farm" target="_blank" rel="noopener">Barney's Cottage ↗</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Tregrehan -->
-  <div class="prop pick" id="tregrehan">
-    <div class="phead">
-      <span class="badge b-green">Price confirmed · Eden on foot</span>
-      <h3>Tregrehan Garden Cottages</h3>
-      <p class="loc">Tregrehan, Par, near St Austell · <strong>The Coach House</strong> + <strong>Game Keepers Cottage</strong></p>
-      <div class="price-tag">£1,540 <small>· published festive rate, 17 Dec–3 Jan. Second cottage ~£1,150 est</small></div>
-    </div>
-    <div class="pbody">
-      <div class="grid2">
-        <div>
-          <h4>Who sleeps where</h4>
-          <table class="sleep">
-            <thead><tr><th>Person</th><th>Room</th><th>Building</th></tr></thead>
-            <tbody>
-              <tr><td class="who">Nan</td><td><span class="gf">Ground-floor double with en-suite shower room and WC</span> — it's a small 4'6" double, worth knowing</td><td><span class="bld main">Coach House</span></td></tr>
-              <tr><td class="who">Mum &amp; Dad</td><td>Upstairs master, king size</td><td><span class="bld main">Coach House</span></td></tr>
-              <tr><td class="who">Matthew</td><td>Upstairs — adult-size bunks plus a single</td><td><span class="bld main">Coach House</span></td></tr>
-              <tr><td class="who">🐕 🐕 <span class="tag">Both dogs</span></td><td>2 dogs, £40 per booking</td><td><span class="bld main">Coach House</span></td></tr>
-              <tr><td class="who">Aunt &amp; Uncle</td><td>Master double, first floor</td><td><span class="bld annexe">Game Keepers</span></td></tr>
-            </tbody>
-          </table>
-          <p class="note">Five cottages in a walled garden estate. Coach House sleeps 7, so there's slack.</p>
-        </div>
-        <div>
-          <h4>Where it is</h4>
-          <iframe class="map" loading="lazy" title="Map of Tregrehan, Par, Cornwall"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-4.758,50.328,-4.698,50.368&layer=mapnik&marker=50.348,-4.728"></iframe>
-          <a class="maplink" href="https://www.openstreetmap.org/?mlat=50.348&mlon=-4.728#map=13/50.348/-4.728" target="_blank" rel="noopener">Open bigger map ↗</a>
-          <h4 style="margin-top:20px">The area</h4>
-          <ul class="facts">
-            <li class="f-y"><strong>The Eden Project is a 20-minute walk.</strong> It does Christmas lights and ice skating and usually stays open through to early January</li>
-            <li class="f-y">The only Cornish option with an actual published Christmas price</li>
-            <li class="f-y">Pub half a mile, shops a mile, coastal path 20 minutes on foot to Crinnis Beach</li>
-            <li class="f-y">Heligan is 20 minutes' drive and opens its Night Garden on Boxing Day</li>
-            <li class="f-m">Nan would be alone downstairs with everyone else upstairs</li>
-            <li class="f-m">Game Keepers' festive rate isn't published — £1,150 is my estimate</li>
-          </ul>
-        </div>
-      </div>
-      <div class="flag"><b>Careful with the other cottages here:</b> The Mews and The Old Stables look ideal on paper but the owner takes no pets at all. It has to be Coach House plus Game Keepers.</div>
-      <div class="links">
-        <a class="btn pri" href="https://www.independentcottages.co.uk/cornwall/tregrehan-garden-cottages-ref2173" target="_blank" rel="noopener">The Coach House ↗</a>
-        <a class="btn" href="https://www.independentcottages.co.uk/cornwall/tregrehan-garden-cottages-ref2171" target="_blank" rel="noopener">Game Keepers ↗</a>
-        <a class="btn" href="https://www.tregrehan.org/" target="_blank" rel="noopener">Tregrehan estate ↗</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Harrods -->
-  <div class="prop" id="harrods">
-    <div class="phead">
-      <span class="badge b-green">Walkable pub</span>
-      <h3>Harrods Cornish Cottages</h3>
-      <p class="loc">Penhallow, near Truro and Perranporth · <strong>The Forge</strong> + <strong>The Hide</strong></p>
-      <div class="price-tag est">~£2,200 <small>for both at worst · Christmas rate not published</small></div>
-    </div>
-    <div class="pbody">
-      <div class="grid2">
-        <div>
-          <h4>Who sleeps where</h4>
-          <table class="sleep">
-            <thead><tr><th>Person</th><th>Room</th><th>Building</th></tr></thead>
-            <tbody>
-              <tr><td class="who">Nan</td><td><span class="gf">Ground-floor bedroom with en-suite shower</span> — carved wood king-size bed</td><td><span class="bld main">The Forge</span></td></tr>
-              <tr><td class="who">Mum &amp; Dad</td><td>Second ground-floor bedroom, own en suite, glazed doors onto the garden</td><td><span class="bld main">The Forge</span></td></tr>
-              <tr><td class="who">🐕 🐕 <span class="tag">Both dogs</span></td><td>2 dogs, no extra charge</td><td><span class="bld main">The Forge</span></td></tr>
-              <tr><td class="who">Aunt &amp; Uncle</td><td>King bed studio, one level, en suite with rainfall shower</td><td><span class="bld annexe">The Hide</span></td></tr>
-              <tr><td class="who">Matthew</td><td>The Stables (sleeps 2, en-suite wet room, hot tub) — a third unit on the same estate</td><td><span class="bld annexe">The Stables</span></td></tr>
-            </tbody>
-          </table>
-          <p class="note">Five cottages on a private estate. If Nan's mobility is the priority, ask about <strong>The Coach House</strong> instead — it's purpose-built accessible with level access, a full wet room, height-adjustable sink and hob, and takes 3+ dogs.</p>
-        </div>
-        <div>
-          <h4>Where it is</h4>
-          <iframe class="map" loading="lazy" title="Map of Penhallow, Cornwall"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-5.138,50.334,-5.078,50.374&layer=mapnik&marker=50.354,-5.108"></iframe>
-          <a class="maplink" href="https://www.openstreetmap.org/?mlat=50.354&mlon=-5.108#map=13/50.354/-5.108" target="_blank" rel="noopener">Open bigger map ↗</a>
-          <h4 style="margin-top:20px">The area</h4>
-          <ul class="facts">
-            <li class="f-y">Within walking distance of the White House Inn — the only Cornish option with a pub you can walk to</li>
-            <li class="f-y">Perranporth beach 3 miles, and it runs a free sand-chair service so Nan could get onto the sand</li>
-            <li class="f-y">St Agnes under 3 miles, Truro and Newquay both about 15 minutes</li>
-            <li class="f-n">The Forge has a stepped entrance — level once you're inside, but not step-free from the car</li>
-            <li class="f-m">Christmas price not published</li>
-          </ul>
-        </div>
-      </div>
-      <div class="links">
-        <a class="btn pri" href="https://www.harrods-cornwall.co.uk/the-cottages/" target="_blank" rel="noopener">Harrods Cornish Cottages ↗</a>
-        <a class="btn" href="https://www.independentcottages.co.uk/cornwall/the-forge-ref4590" target="_blank" rel="noopener">The Forge ↗</a>
-        <a class="btn" href="https://www.independentcottages.co.uk/cornwall/the-hide-ref5139" target="_blank" rel="noopener">The Hide ↗</a>
-        <a class="btn" href="https://www.independentcottages.co.uk/cornwall/the-coach-house-ref4499" target="_blank" rel="noopener">The Coach House ↗</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Hele Barton -->
-  <div class="prop" id="helebarton">
-    <div class="phead">
-      <span class="badge b-amber">Most dog-friendly</span>
-      <h3>Hele Barton Farm</h3>
-      <p class="loc">Week St Mary, near Bude, North Cornwall · <strong>The Mowhay Barn</strong> + <strong>Courtyard Stables</strong></p>
-      <div class="price-tag est">~£1,850 <small>at worst · Christmas rate not published</small></div>
-    </div>
-    <div class="pbody">
-      <div class="grid2">
-        <div>
-          <h4>Who sleeps where</h4>
-          <table class="sleep">
-            <thead><tr><th>Person</th><th>Room</th><th>Building</th></tr></thead>
-            <tbody>
-              <tr><td class="who">Nan</td><td><span class="gf">Ground-floor double with en-suite shower room</span></td><td><span class="bld main">Mowhay Barn</span></td></tr>
-              <tr><td class="who">Mum &amp; Dad</td><td>Ground-floor superking (splits to twins), en suite with a spa bath</td><td><span class="bld main">Mowhay Barn</span></td></tr>
-              <tr><td class="who">🐕 🐕 <span class="tag">Both dogs</span></td><td><strong>Up to 4 dogs</strong>, £20 each — the most generous anywhere on this list</td><td><span class="bld main">Mowhay Barn</span></td></tr>
-              <tr><td class="who">Aunt &amp; Uncle</td><td>Ground-floor king, en-suite walk-in shower. Single storey with <em>no internal or external steps at all</em></td><td><span class="bld annexe">Courtyard Stables</span></td></tr>
-              <tr><td class="who">Matthew</td><td>The Hayloft (sleeps 2, four-poster on a mezzanine) — a third unit, ~£695</td><td><span class="bld annexe">The Hayloft</span></td></tr>
-            </tbody>
-          </table>
-          <p class="note">Five barns on a working farm. If we wanted everyone under one roof instead, <strong>Harvest Barn</strong> sleeps 8 with four ground-floor bedrooms, all en suite, plus a hot tub.</p>
-        </div>
-        <div>
-          <h4>Where it is</h4>
-          <iframe class="map" loading="lazy" title="Map of Week St Mary, near Bude"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-4.502,50.746,-4.442,50.786&layer=mapnik&marker=50.766,-4.472"></iframe>
-          <a class="maplink" href="https://www.openstreetmap.org/?mlat=50.766&mlon=-4.472#map=13/50.766/-4.472" target="_blank" rel="noopener">Open bigger map ↗</a>
-          <h4 style="margin-top:20px">The area</h4>
-          <ul class="facts">
-            <li class="f-y">Honesty farm shop, fishing lakes, dog paddock and farm walks straight from the door</li>
-            <li class="f-y">Widemouth Bay 5 minutes' drive; Bude 7 miles for proper shops</li>
-            <li class="f-y">Courtyard Stables genuinely has no steps anywhere — worth considering for Nan instead</li>
-            <li class="f-n">No pub within walking distance — the nearest are within a 3-mile radius</li>
-            <li class="f-m">Christmas price not published</li>
-          </ul>
-        </div>
-      </div>
-      <div class="flag"><b>The one real snag:</b> Mowhay Barn is an upside-down conversion — bedrooms downstairs, but the living room and kitchen are <em>upstairs</em>. Nan would be doing stairs every time she wanted to sit with everyone. Worth asking whether Cyder Barn (three ground-floor bedrooms) has the same layout.</div>
-      <div class="links">
-        <a class="btn pri" href="https://www.helebarton.co.uk/dog-friendly/" target="_blank" rel="noopener">Hele Barton website ↗</a>
-        <a class="btn" href="https://www.independentcottages.co.uk/cornwall/the-mowhay-barn-ref1646" target="_blank" rel="noopener">Mowhay Barn ↗</a>
-        <a class="btn" href="https://www.independentcottages.co.uk/cornwall/courtyard-stables-ref1637" target="_blank" rel="noopener">Courtyard Stables ↗</a>
-        <a class="btn" href="tel:+441288341847">Call 01288 341847</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="panel">
-    <h4>Three more Cornish sites worth a call</h4>
-    <ul class="facts">
-      <li class="f-y"><strong>Cory Farm, Morwenstow (nr Bude)</strong> — Marsland Cottage sleeps 6 with <em>all three bedrooms downstairs</em> and an en-suite master, 2 dogs. All four of us on one level, aunt and uncle in Welcombe or Stanbury. Remote though — Bude is 25 minutes. <a href="https://www.holidaycottages.co.uk/cottage/424-cory-farm-marsland-cottage" target="_blank" rel="noopener">Listing ↗</a></li>
-      <li class="f-y"><strong>Treligga Farm, nr Port Isaac</strong> — the cheapest of the lot at roughly £1,400–£2,200 with published rates. Swallows is all ground floor with a wet room and a hot tub; Stable next door sleeps 2. Catch: no en suite, and the second bedroom is bunks. <a href="https://www.cottages.com/cottages/treligga-farm-cottages-swallows-30109" target="_blank" rel="noopener">Listing ↗</a></li>
-      <li class="f-m"><strong>Talehay, Pelynt (nr Looe)</strong> — cheapest of all at about £1,625, and the closest to Polperro and Looe. But the two listing sites disagree about which floor Owl Cottage's bedrooms are on, so it needs confirming before anything else. <a href="https://www.talehay.co.uk/" target="_blank" rel="noopener">Website ↗</a></li>
-    </ul>
-    <p class="note"><strong>Ruled out in Cornwall:</strong> Boscrowan Farm and Downs Barn Farm (no pets at all), The Barn at Constantine and Courtyard Farm at Boscastle (1 dog only), Bosinver near St Austell (dogs only in selected cottages at certain times of year), and Pen Den Har at Kingsand — great layout, but it sleeps 12 and starts at £2,621 a week before the Christmas premium.</p>
-  </div>
-</div>
-</section>
-
-<!-- ============ DOG WALKS ============ -->
 <section id="walks">
 <div class="wrap">
   <h2>🐕 Walking the dogs straight from the door</h2>
@@ -1070,8 +355,6 @@
   </div>
 </div>
 </section>
-
-<!-- ============ RULED OUT ============ -->
 <section id="out">
 <div class="wrap">
   <h2>Ruled out — and why</h2>
@@ -1087,8 +370,6 @@
   </div>
 </div>
 </section>
-
-<!-- ============ CAVEATS + QUESTIONS ============ -->
 <section id="ask">
 <div class="wrap">
   <h2>Before we book</h2>
@@ -1114,12 +395,12 @@
 </div>
 </section>
 
+
 <footer>
   <div class="wrap">
     <p>Put together 15 August 2026 for the family. Details come from Independent Cottages, Group Accommodation, Classic Cottages, Hoe Grange and Wooder Manor's own listings — all checked directly, but layouts and dog policies should be confirmed with the owner before anyone pays a deposit.</p>
     <p>Prices marked "est" are worked out from published low-season rates, not quoted. Availability for Christmas 2026 is unconfirmed everywhere. Attraction opening dates are based on last year's pattern unless stated, since most places haven't published December 2026 hours yet.</p>
   </div>
 </footer>
-
 </body>
 </html>
