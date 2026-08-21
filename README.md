@@ -60,32 +60,36 @@ Perranporth beach is unrestricted in December.
 
 **Best on-site:** Low Costa Mill — enclosed dog paddock plus 10 acres of private woodland.
 
-## Airbnb
+## Airbnb — Cornwall, Devon and the Cotswolds
 
-**18 Cornish properties are confirmed available for 21–28 December 2026**, for 6 guests with
-2 dogs, from **£1,467 to £3,075** for the week including fees. That is the only source that
-would confirm availability for our exact dates.
+Searched 19 August 2026 for 21–28 December 2026, 6 guests, 2 dogs, 3+ bedrooms. Each region
+returns roughly 20 matches for our week, and every listing description was read to check for
+an annexe and a ground-floor bedroom.
 
-**The catch — none of them meets the two-buildings rule.** All 18 listing descriptions were read
-and checked: **zero** have an annexe, second cottage, or any separate self-contained building.
-There is nowhere for the aunt and uncle to sleep apart from everyone else.
+**Across all three regions, exactly one property has a separate building** — and it is one
+bedroom short. Everything else is a single house.
 
-On Airbnb the only way to get two buildings is to book **two separate listings on one site** —
-which is exactly the pattern the eleven cottages already use.
+### The ones that matter
 
-On Nan's ground-floor bedroom they do better: **3 of the 18** have one.
-
-| Property | Week total | Ground-floor sleeping |
+| Property | Week total | Why |
 |---|---|---|
-| Brayside, converted chapel, St Just | £1,700 | **Two** bedrooms downstairs; master en suite is upstairs |
-| Beachfront home, Porth | £1,684 | Third bedroom downstairs, double, shower room on the same level |
-| Beachside family home, Praa Sands | £3,075 | Bedroom One downstairs, super king, converts to twins |
+| **Danby Cottage**, Forest of Dean | **£1,640** | Accessibility designed in, not retrofitted — wheelchair accessible, downstairs bedroom and bathroom, level-access garden. Forest walks from the door *and* walkable pubs. Best accessible house in the search. One building though. |
+| **Fernleigh**, Georgeham, Devon | **£1,647** | The only genuine separate building found: 2-bed cottage plus a third bedroom in a **self-contained annexe with en-suite**. Two pubs walkable. But three bedrooms total — one pair short — and the annexe is a bedroom, not a living space. |
+| **Barn Cottage**, Westover Farm, Dorset | **£1,075** | Ground-floor twin **with its own en suite**, secure fenced garden, cheapest here. Sister *Cider Cottage* can be booked alongside — but is **not free our week**. Worth a call. |
+| **the Smithy + the Stables**, nr Charmouth | **£664 + £761** | Two of three cottages on one site, shared garden, both free — £1,425 for the pair. But every bedroom is upstairs, so nothing for Nan. |
+| **5 The Vista**, Devon | £2,347 | **Two** ground-floor bedrooms, one en suite. Best ground-floor layout in Devon. |
+| **Brayside**, St Just, Cornwall | £1,700 | **Two** bedrooms on the ground floor. Best in Cornwall. |
 
-They solve the *availability* problem, not the *layout* problem — a fallback if the two-building
-rule flexes, or leverage on dates.
+Also ground floor: Beachfront home Porth (£1,684), Praa Sands (£3,075), Hope Cove (£2,432),
+The Coach House Brockworth (£1,738), Swallow Cottage Chippenham (£2,242 — dogs only "on request",
+and must stay leashed outside).
 
-Only Cornwall has been searched so far. The same search still needs running for the Peak
-District, Yorkshire, Northumberland, Herefordshire and Dartmoor.
+**Treat these as a live snapshot, not an inventory.** Re-running the same search minutes later
+returned a partly different set, so anything missing is worth checking directly rather than
+assumed gone.
+
+Still unsearched: the Peak District, Yorkshire, Northumberland and Herefordshire — where Hoe
+Grange and Low Costa Mill actually are.
 
 ## Caveats
 
