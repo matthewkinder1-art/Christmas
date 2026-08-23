@@ -98,8 +98,24 @@ Searched 23 August 2026 for 21–28 December 2026, 6 guests, 2 dogs, 3+ bedrooms
 returns roughly 20 matches for our week, and every listing description was read to check for
 an annexe and a ground-floor bedroom.
 
-**Across all three regions, exactly one property has a separate building** — and it is one
-bedroom short. Everything else is a single house.
+**Padstow and the Camel Estuary is the best area found.** Across Cornwall, Devon and the Cotswolds
+the two-buildings rule looked near-unsolvable on Airbnb — one annexe in about 60 listings, and that
+one a bedroom short. Searching the Camel Estuary turned up **three separate annexes and a
+five-house estate** straight away.
+
+### Padstow — the standouts
+
+| Property | Week total | Why |
+|---|---|---|
+| **42 Dennis Road**, Padstow | **£1,840** | **All three bedrooms on the ground floor**, one en suite, plus a second ground-floor shower room — and the kitchen, dining and sitting rooms are downstairs too, so nobody climbs stairs to be together. Best ground-floor layout in the entire project. Three bedrooms, so the aunt and uncle still need a second building. |
+| **Highcliffe**, Trebetherick | £2,049–£2,682 each | **A real five-house estate**, four houses free our week: Streatfeild (sleeps 6, £2,049), Nantucket (sleeps 7, £2,232, **two bedrooms downstairs**), Fastnet (£2,232), Tregoyd (£2,682). Shared gym, tennis courts, reception; coast path to Polzeath and Daymer Bay. Dogs £25 each per week. Cheapest two houses = **£4,281**, ~£280 over budget. |
+| **The Annex at Trewidden**, Trebetherick | **£885** | "Completely separate and set away." King, own shower room, private parking, and an outside shower for washing the dog. **5 min walk to dog-friendly Daymer Bay and Polzeath, pub within 5 min.** |
+| **Annexe by the Camel Trail**, Trevanson | **£940** | Newly built separate annexe **right on the Camel Trail** — the flat wheelchair-rated walk that made Trenarlett attractive. Wadebridge 10 min on foot. |
+
+**Best-value combination: Streatfeild + The Annex at Trewidden = £2,934**, both in Trebetherick and
+comfortably inside budget — though two addresses in one village rather than one site.
+
+Elsewhere, only one property had a separate building and it was a bedroom short.
 
 ### The ones that matter
 
