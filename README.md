@@ -150,12 +150,14 @@ Grange and Low Costa Mill actually are.
 
 ## Files
 
-- `index.html` — hub: the brief, all twelve options as cards, comparison table, dog walks,
-  ruled-out list, and the questions to ask
+- `index.html` — hub: the brief, all twelve options as cards, comparison table, who to ring
+  and what to ask
 - One page per property — `cowarne.html`, `hoegrange.html`, `wooder.html`, `lowcosta.html`,
   `burnfoot.html`, `westclose.html`, `longview.html`, `trenarlett.html`, `tregrehan.html`,
   `harrods.html`, `helebarton.html`
-- `airbnb.html` — the 18 live-availability finds
+- `airbnb.html` — pairs of places confirmed free for our week
+- `walks.html` — dog walking from the door
+- `ruledout.html` — already checked and eliminated
 - `style.css` — shared by every page
 
 No build step and no dependencies; the pages are plain HTML.

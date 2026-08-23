@@ -193,6 +193,12 @@ table.bnb th,table.bnb td{padding:9px 10px;border-bottom:1px solid var(--line2);
 table.bnb th{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 table.bnb td.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
 .wrapscroll{overflow-x:auto}
+.pair{border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:18px 0;background:var(--card);box-shadow:var(--shadow)}
+.pair .phead2{margin-bottom:8px}
+.pair h3{margin:.35em 0 .1em;font-size:1.2rem}
+.pair .loc{color:var(--muted);margin:0 0 .2em;font-size:.94rem}
+.pair ul{margin:.6em 0 0;padding-left:20px}
+.pair li{margin:.5em 0;font-size:.95rem;line-height:1.6}
 .caveat{background:var(--amber-soft);border:1px solid var(--line);border-left:3px solid var(--amber);
         border-radius:10px;padding:14px 16px;margin:16px 0}
 @media (prefers-color-scheme:dark){.caveat{background:rgba(138,90,31,.14)}}
