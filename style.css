@@ -196,3 +196,11 @@ table.bnb td.num{text-align:right;white-space:nowrap;font-variant-numeric:tabula
 .caveat{background:var(--amber-soft);border:1px solid var(--line);border-left:3px solid var(--amber);
         border-radius:10px;padding:14px 16px;margin:16px 0}
 @media (prefers-color-scheme:dark){.caveat{background:rgba(138,90,31,.14)}}
+.refresh{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:20px 0 4px;background:var(--card)}
+.refresh.r-red{border-left:4px solid var(--red)}
+.refresh.r-green{border-left:4px solid var(--green)}
+.refresh.r-amber{border-left:4px solid var(--amber)}
+.refresh .rhead{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.refresh .rhead strong{font-size:.92rem;color:var(--muted);font-weight:600}
+.refresh ul{margin:0;padding-left:20px}
+.refresh li{margin:.5em 0;font-size:.95rem;line-height:1.55}

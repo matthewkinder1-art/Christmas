@@ -37,12 +37,44 @@ nearly every option here is **two cottages on one site, booked together**.
 
 | # | Where | Christmas price | Note |
 |---|---|---|---|
-| 8 | Trenarlett Farm, St Tudy | ~£900–2,200 est | Best in Cornwall — both bedrooms ground floor and en suite, 3–4 dogs |
+| 8 | Trenarlett Farm, St Tudy | ~£900–2,200 est | 4 dogs, both bedrooms en suite — but **three steps** to the second bedroom |
 | 9 | Tregrehan, Par | **£1,540 confirmed** (main only) | Eden Project a 20-minute walk |
-| 10 | Harrods Cottages, Penhallow | ~£2,200 est | Only Cornish option with a walkable pub |
+| 10 | Harrods Cottages, Penhallow | **~£1,380–2,950** | **Five** properties. Coach House + Forge = two buildings, all bedrooms GF en suite |
 | 11 | Hele Barton, nr Bude | ~£1,850 est | Up to 4 dogs; but living room is upstairs |
 
 Also worth a call: Cory Farm (Morwenstow), Treligga Farm (nr Port Isaac), Talehay (nr Looe).
+
+## Devon & Cornwall re-checked at source — 23 August 2026
+
+Every Devon and Cornwall listing was re-read on the agency and owner sites. Four things changed.
+
+**Trenarlett — a correction, and it matters.** Cornish Horizons states: *"There are three steps
+between the lounge and the second bedroom, or you avoid them by using the outside path."* Earlier
+drafts here called Dickins' Cottage single storey and step-free. Going outside and round in
+December is not a workaround for Nan. Ask which bedroom sits behind the steps. Confirmed good:
+**4 dogs**, both bedrooms en suite (one a wet room), enclosed garden.
+
+**Harrods — better than we rated it.** The owner has **five** properties sleeping up to 16
+together, not the two listed here. *The Coach House* (sleeps 4; king with en-suite wet room,
+wide doorways, height-adjustable sink and hob, space for a mobile hoist, **3+ dogs**;
+£1,012–£1,957) plus *The Forge* (sleeps 4; **both bedrooms ground floor and en suite, all on one
+level**, 2 dogs; £368–£993) gives two separate buildings with every bedroom on the ground floor
+for roughly **£1,380–£2,950**. A third unit, *The Hide* (studio, sleeps 2, GF, en suite, 2 dogs,
+£500–£1,200), is new since this site was written. The A3075 road-walking problem is unchanged and
+is what still keeps it off the top.
+
+**Wooder Manor — open question resolved.** Lower Chinkwell is *ground floor, double and twin,
+family bathroom with a sliding door* — single level, but **no en suite**. Also newly noted: Lower
+Hameldown's second double has an en suite "accessed via two steps"; the wheel-in shower room is
+the one that matters for Nan.
+
+**Tregrehan — Game Keepers now has a published rate, £1,060 — but read the band.** It covers
+*New Year, 28 Dec–3 Jan*, which starts the day our week ends. The 21–28 Dec rate is still
+unpublished. Coach House re-confirmed at £1,540 for 17 Dec–3 Jan.
+
+**Devon is genuinely thin, not under-researched.** A fresh sweep of Independent Cottages' Devon
+listings for multi-cottage sites taking 2+ dogs with a ground-floor bedroom returned **only
+Wooder Manor**.
 
 ## Dog walking from the door
 
@@ -62,7 +94,7 @@ Perranporth beach is unrestricted in December.
 
 ## Airbnb — Cornwall, Devon and the Cotswolds
 
-Searched 19 August 2026 for 21–28 December 2026, 6 guests, 2 dogs, 3+ bedrooms. Each region
+Searched 23 August 2026 for 21–28 December 2026, 6 guests, 2 dogs, 3+ bedrooms. Each region
 returns roughly 20 matches for our week, and every listing description was read to check for
 an annexe and a ground-floor bedroom.
 
