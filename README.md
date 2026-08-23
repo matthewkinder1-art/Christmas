@@ -92,52 +92,42 @@ Perranporth beach is unrestricted in December.
 
 **Best on-site:** Low Costa Mill — enclosed dog paddock plus 10 acres of private woodland.
 
-## Airbnb — Cornwall, Devon and the Cotswolds
+## Two places, a house or two apart
 
-Searched 23 August 2026 for 21–28 December 2026, 6 guests, 2 dogs, 3+ bedrooms. Each region
-returns roughly 20 matches for our week, and every listing description was read to check for
-an annexe and a ground-floor bedroom.
+**The rule everything is filtered on: no upstairs bedroom for Nan.** Anything without a genuine
+ground-floor bedroom is out, whatever else it has. Each option below was checked by reading the
+listing's own room-by-room description, not its summary.
 
-**Padstow and the Camel Estuary is the best area found.** Across Cornwall, Devon and the Cotswolds
-the two-buildings rule looked near-unsolvable on Airbnb — one annexe in about 60 listings, and that
-one a bedroom short. Searching the Camel Estuary turned up **three separate annexes and a
-five-house estate** straight away.
+Searched 23 August 2026 for 21-28 December 2026, 2 dogs, 2+ bedrooms.
 
-### Padstow — the standouts
+### Otters Holt + Badgers Sett — Towan, **£2,423**
 
-| Property | Week total | Why |
+- **Otters Holt (£1,005)** — Nan, Mum & Dad, both dogs. A **bungalow**, so there is no upstairs at
+  all. Primary bedroom is a king **with en suite and sliding doors onto the garden**. Large enclosed
+  rear garden.
+- **Badgers Sett (£1,418)** — Matthew and the aunt and uncle. Detached, private garden, parking for
+  three. Its bedrooms are upstairs, which is fine — Nan is not in this one.
+- Same small hamlet, a house or two apart. Both take two dogs. St Merryn village walkable from both
+  (mini market, bakery, restaurants); footpaths from Otters Holt's door towards Trevose Head.
+- **£1,577 under budget.**
+
+### Also clears the rule
+
+| Property | Week total | Note |
 |---|---|---|
-| **42 Dennis Road**, Padstow | **£1,840** | **All three bedrooms on the ground floor**, one en suite, plus a second ground-floor shower room — and the kitchen, dining and sitting rooms are downstairs too, so nobody climbs stairs to be together. Best ground-floor layout in the entire project. Three bedrooms, so the aunt and uncle still need a second building. |
-| **Highcliffe**, Trebetherick | £2,049–£2,682 each | **A real five-house estate**, four houses free our week: Streatfeild (sleeps 6, £2,049), Nantucket (sleeps 7, £2,232, **two bedrooms downstairs**), Fastnet (£2,232), Tregoyd (£2,682). Shared gym, tennis courts, reception; coast path to Polzeath and Daymer Bay. Dogs £25 each per week. Cheapest two houses = **£4,281**, ~£280 over budget. |
-| **The Annex at Trewidden**, Trebetherick | **£885** | "Completely separate and set away." King, own shower room, private parking, and an outside shower for washing the dog. **5 min walk to dog-friendly Daymer Bay and Polzeath, pub within 5 min.** |
-| **Annexe by the Camel Trail**, Trevanson | **£940** | Newly built separate annexe **right on the Camel Trail** — the flat wheelchair-rated walk that made Trenarlett attractive. Wadebridge 10 min on foot. |
+| **42 Dennis Road**, Padstow | £1,840 | **All three bedrooms ground floor**, one en suite, plus a second GF shower room. One house, so the aunt and uncle need somewhere nearby. |
+| **Streatfeild + Nantucket**, Highcliffe | £4,281 | Five-house estate, shared gym and tennis. Only works with **Nan in Nantucket** (two bedrooms downstairs) — Streatfeild's floors are unstated. **£281 over budget.** |
 
-**Best-value combination: Streatfeild + The Annex at Trewidden = £2,934**, both in Trebetherick and
-comfortably inside budget — though two addresses in one village rather than one site.
+### Ruled out by the rule
 
-Elsewhere, only one property had a separate building and it was a bedroom short.
+**Choca + Kegyn at Polmark** (was £2,868) — physically the best arrangement found, two cottages
+sharing a courtyard 200m from Harlyn Bay, but **every bedroom in both is upstairs**. Same for
+**Hillcrest** (£998) and **Sea Meadows** (£1,075) in Padstow.
 
-### The ones that matter
+**How thin this is:** of every 2-bed near Padstow taking two dogs and free our week, **exactly two
+have a ground-floor bedroom**. The constraint is doing the work, not the budget.
 
-| Property | Week total | Why |
-|---|---|---|
-| **Danby Cottage**, Forest of Dean | **£1,640** | Accessibility designed in, not retrofitted — wheelchair accessible, downstairs bedroom and bathroom, level-access garden. Forest walks from the door *and* walkable pubs. Best accessible house in the search. One building though. |
-| **Fernleigh**, Georgeham, Devon | **£1,647** | The only genuine separate building found: 2-bed cottage plus a third bedroom in a **self-contained annexe with en-suite**. Two pubs walkable. But three bedrooms total — one pair short — and the annexe is a bedroom, not a living space. |
-| **Barn Cottage**, Westover Farm, Dorset | **£1,075** | Ground-floor twin **with its own en suite**, secure fenced garden, cheapest here. Sister *Cider Cottage* can be booked alongside — but is **not free our week**. Worth a call. |
-| **the Smithy + the Stables**, nr Charmouth | **£664 + £761** | Two of three cottages on one site, shared garden, both free — £1,425 for the pair. But every bedroom is upstairs, so nothing for Nan. |
-| **5 The Vista**, Devon | £2,347 | **Two** ground-floor bedrooms, one en suite. Best ground-floor layout in Devon. |
-| **Brayside**, St Just, Cornwall | £1,700 | **Two** bedrooms on the ground floor. Best in Cornwall. |
-
-Also ground floor: Beachfront home Porth (£1,684), Praa Sands (£3,075), Hope Cove (£2,432),
-The Coach House Brockworth (£1,738), Swallow Cottage Chippenham (£2,242 — dogs only "on request",
-and must stay leashed outside).
-
-**Treat these as a live snapshot, not an inventory.** Re-running the same search minutes later
-returned a partly different set, so anything missing is worth checking directly rather than
-assumed gone.
-
-Still unsearched: the Peak District, Yorkshire, Northumberland and Herefordshire — where Hoe
-Grange and Low Costa Mill actually are.
+Still unsearched: the Peak District, Yorkshire, Northumberland and Herefordshire.
 
 ## Caveats
 
