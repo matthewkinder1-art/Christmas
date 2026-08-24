@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christmas in Cornwall — 2026 · The Shortlist</title>
+<meta name="description" content="The best Cornwall places actually available for our Christmas week — six of us, two dogs, and Nan on the ground floor.">
+<style>
+:root{
+  --paper:#faf6ee; --card:#ffffff; --ink:#22201b; --muted:#7a7264;
+  --line:#e7dfd0; --line2:#f1ebdf;
+  --pine:#1e4d38; --pine-soft:#e6efe9; --pine-deep:#143627;
+  --gold:#b08c3d; --gold-soft:#f6efdd;
+  --berry:#9c2f22;
+  --shadow:0 1px 2px rgba(30,40,30,.06), 0 12px 32px rgba(30,40,30,.07);
+  --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#151511; --card:#1e1d18; --ink:#efe9dc; --muted:#a59c8a;
+    --line:#333026; --line2:#282620;
+    --pine:#6fae8f; --pine-soft:#1d2b23; --pine-deep:#8fc4a9;
+    --gold:#d3ae62; --gold-soft:#2a2418;
+    --berry:#e08573;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 32px rgba(0,0,0,.35);
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+     font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+a{color:var(--pine);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ---------- hero ---------- */
+.hero{padding:64px 0 46px;text-align:center;
+      border-bottom:1px solid var(--line);
+      background:
+        radial-gradient(1200px 400px at 50% -220px, var(--pine-soft), transparent 70%)}
+.hero .stars{color:var(--gold);letter-spacing:.55em;font-size:15px;margin-bottom:18px}
+.hero h1{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;
+         font-size:clamp(2.1rem,6vw,3.6rem);margin:0 0 .35em;line-height:1.12}
+.hero h1 em{font-style:italic;color:var(--pine)}
+.hero .sub{max-width:620px;margin:0 auto 26px;color:var(--muted);font-size:1.06rem}
+.chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:999px;
+      padding:7px 16px;font-size:.86rem;color:var(--muted)}
+.chip strong{color:var(--ink);font-weight:600}
+
+/* ---------- section frame ---------- */
+section{padding:52px 0 8px}
+.kicker{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;
+        color:var(--gold);font-weight:700;margin:0 0 .5em}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.5rem,3.4vw,2.1rem);
+   margin:0 0 .35em;letter-spacing:-.01em}
+.sectionlead{color:var(--muted);max-width:640px;margin:0 0 28px}
+
+/* ---------- property cards ---------- */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:760px){.duo{grid-template-columns:1fr}}
+.prop{background:var(--card);border:1px solid var(--line);border-radius:18px;
+      overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.prop .ph{position:relative;aspect-ratio:16/10;background:var(--line2);overflow:hidden}
+.prop .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.prop .ph .tag{position:absolute;top:14px;left:14px;background:var(--pine);color:#fff;
+      font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+      padding:6px 12px;border-radius:999px}
+@media (prefers-color-scheme:dark){.prop .ph .tag{color:#10251a}}
+.prop .ph .tag.gold{background:var(--gold)}
+.prop .body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.prop h3{font-family:var(--serif);font-size:1.3rem;font-weight:600;margin:0 0 .15em}
+.prop .where{color:var(--muted);font-size:.9rem;margin:0 0 .8em}
+.prop ul{margin:0 0 1em;padding-left:19px}
+.prop li{margin:.4em 0;font-size:.94rem}
+.prop .price{margin-top:auto;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+      border-top:1px solid var(--line2);padding-top:14px}
+.prop .price .amt{font-family:var(--serif);font-size:1.45rem;font-weight:600;color:var(--pine)}
+.prop .price .per{color:var(--muted);font-size:.85rem}
+.prop .price a{margin-left:auto;font-size:.88rem;font-weight:600}
+
+/* the pick — full-width banner treatment */
+.pickband{background:linear-gradient(180deg,var(--pine-soft),transparent);
+          border:1px solid var(--line);border-radius:22px;padding:26px;margin-top:6px}
+.picksum{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:0 0 20px}
+.picksum .total{font-family:var(--serif);font-size:2rem;font-weight:600;color:var(--pine)}
+.picksum .note{color:var(--muted)}
+.verdict{margin:20px 0 0;padding:16px 20px;background:var(--card);border:1px solid var(--line);
+         border-left:4px solid var(--gold);border-radius:12px;font-size:.95rem}
+
+/* one-roof grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+
+/* nearly-made-it */
+.nearly{border-top:1px solid var(--line);margin-top:46px;padding-top:34px}
+.nearly ul{margin:14px 0 0;padding:0;list-style:none}
+.nearly li{padding:12px 0;border-bottom:1px solid var(--line2);font-size:.94rem}
+.nearly li:last-child{border-bottom:0}
+.nearly .n{font-weight:600}
+.nearly .r{color:var(--muted)}
+
+/* checklist + footer */
+.check{background:var(--card);border:1px solid var(--line);border-radius:18px;
+       padding:24px 26px;margin-top:8px}
+.check ol{margin:.5em 0 0;padding-left:22px}
+.check li{margin:.55em 0;font-size:.95rem}
+footer{margin-top:56px;padding:30px 0 44px;border-top:1px solid var(--line);
+       text-align:center;color:var(--muted);font-size:.88rem}
+footer .stars{color:var(--gold);letter-spacing:.5em;margin-bottom:12px}
+.smallprint{font-size:.82rem;color:var(--muted);margin-top:14px}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="stars">❄ ✦ ❄</div>
+    <h1>Christmas in <em>Cornwall</em></h1>
+    <p class="sub">Six of us, two dogs, and Nan sleeping on the ground floor — nothing here breaks
+    that rule. Every place below was <strong>confirmed free for our week</strong> and read
+    room-by-room before it made the page.</p>
+    <div class="chips">
+      <span class="chip"><strong>21–28 December 2026</strong></span>
+      <span class="chip"><strong>2 dogs</strong> welcome at every option</span>
+      <span class="chip">Ground-floor bed for <strong>Nan</strong>, always</span>
+      <span class="chip">Budget <strong>£4,000</strong></span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ THE PICK ============ -->
+<section>
+<div class="wrap">
+  <p class="kicker">The pick</p>
+  <h2>Otters Holt + Badgers Sett, Towan</h2>
+  <p class="sectionlead">Two houses a moment apart in one quiet hamlet between St Merryn and
+  Constantine Bay — the only pairing found in Cornwall that satisfies the whole brief with room to spare.</p>
+
+  <div class="pickband">
+    <p class="picksum"><span class="total">£2,423</span>
+      <span class="note">for both houses, the whole week — <strong>£1,577 under budget</strong></span></p>
+    <div class="duo">
+      <div class="prop">
+        <div class="ph"><span class="tag">Nan · Mum &amp; Dad · both dogs</span>
+          <img src="https://a0.muscache.com/im/pictures/miso/Hosting-49310297/original/c8ad895e-8941-483b-b565-6d72c4b2fd07.jpeg?im_w=960" alt="Otters Holt, a bungalow near Constantine Bay" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <h3>Otters Holt</h3>
+          <p class="where">Bungalow · sleeps 4 · Towan, near Constantine Bay</p>
+          <ul>
+            <li><strong>A bungalow — there is no upstairs.</strong> The question can't even come up.</li>
+            <li>Primary bedroom is a king <strong>with its own en suite</strong> and sliding doors straight onto the garden — the dogs go out without crossing the house.</li>
+            <li>Large enclosed rear garden with decking and lawn.</li>
+            <li>Footpaths from the door through fields towards Trevose Head.</li>
+          </ul>
+          <p class="price"><span class="amt">£1,005</span><span class="per">week total</span>
+            <a href="https://www.airbnb.co.uk/rooms/49310297" target="_blank" rel="noopener">View listing ↗</a></p>
+        </div>
+      </div>
+      <div class="prop">
+        <div class="ph"><span class="tag gold">Matthew · Aunt &amp; Uncle</span>
+          <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTkwMDg0Nzk=/original/262faefe-62b6-46c3-8f97-dbe7e5546856.jpeg?im_w=960" alt="Badgers Sett, a detached house in Towan" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <h3>Badgers Sett</h3>
+          <p class="where">Detached house · sleeps 5 · ★4.9 · same hamlet</p>
+          <ul>
+            <li>Detached, immaculate, with a <strong>private south-facing garden</strong> and parking for three cars.</li>
+            <li>Two doubles upstairs — fine, because Nan isn't in this one.</li>
+            <li>Boot-room entrance for wet coats, walking boots and surfboards.</li>
+          </ul>
+          <p class="price"><span class="amt">£1,418</span><span class="per">week total</span>
+            <a href="https://www.airbnb.co.uk/rooms/19008479" target="_blank" rel="noopener">View listing ↗</a></p>
+        </div>
+      </div>
+    </div>
+    <p class="verdict"><strong>Why this wins:</strong> St Merryn village — mini market, bakery,
+    restaurants — is an easy walk from both front doors, the dogs get field walks without a car,
+    Constantine Bay is close, and Padstow is three miles. Of every 2-bedroom place near Padstow
+    taking two dogs and free our week, <strong>only two had a ground-floor bedroom at all</strong>
+    — and this is the one that comes with a second house beside it. Both are bookable today.</p>
+  </div>
+</div>
+</section>
+
+<!-- ============ WORTH ONE CALL ============ -->
+<section>
+<div class="wrap">
+  <p class="kicker">Worth one phone call</p>
+  <h2>Harrods Cornish Cottages, Penhallow</h2>
+  <p class="sectionlead">Not on Airbnb, so availability needs a call — but on paper this is the
+  strongest layout in Cornwall: two separate buildings where <strong>every single bedroom is
+  ground floor and en suite</strong>.</p>
+  <div class="duo">
+    <div class="prop">
+      <div class="ph"><span class="tag">Nan · Mum &amp; Dad · both dogs</span>
+        <img src="https://www.independentcottages.co.uk/gallery/4499/frontpic_1696697579.jpg" alt="The Coach House at Harrods Cornish Cottages" loading="lazy" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>The Coach House</h3>
+        <p class="where">Sleeps 4 · purpose-built accessible · 3+ dogs</p>
+        <ul>
+          <li>King bedroom with <strong>en-suite wet room</strong>; second bedroom zip-link twin/super-king, also en suite.</li>
+          <li>Wide doorways, height-adjustable sink and hob, space for a mobile hoist — the most accessible spec on this page.</li>
+        </ul>
+        <p class="price"><span class="amt">£1,012–£1,957</span><span class="per">published band</span>
+          <a href="https://www.independentcottages.co.uk/cornwall/the-coach-house-ref4499" target="_blank" rel="noopener">View listing ↗</a></p>
+      </div>
+    </div>
+    <div class="prop">
+      <div class="ph"><span class="tag gold">Matthew · Aunt &amp; Uncle</span>
+        <img src="https://www.independentcottages.co.uk/gallery/4590/frontpic_1696705626.jpg" alt="The Forge at Harrods Cornish Cottages" loading="lazy" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>The Forge</h3>
+        <p class="where">Sleeps 4 · all on one level · 2 dogs</p>
+        <ul>
+          <li><strong>Both bedrooms ground floor, both en suite</strong> — a king and a twin that links to a king.</li>
+          <li>Five properties on the estate, so a third unit exists if we want to spread out.</li>
+        </ul>
+        <p class="price"><span class="amt">£368–£993</span><span class="per">published band</span>
+          <a href="https://www.independentcottages.co.uk/cornwall/the-forge-ref4590" target="_blank" rel="noopener">View listing ↗</a></p>
+      </div>
+    </div>
+  </div>
+  <p class="verdict"><strong>The honest catch:</strong> the site sits on the A3075, so every dog
+  walk starts with a car ride — Perranporth beach (3 miles) is off-lead all December. And no
+  Christmas price is published: the ~£1,380–£2,950 range is the shoulder bands. One call answers
+  both availability and price.</p>
+</div>
+</section>
+
+<!-- ============ ONE ROOF ============ -->
+<section>
+<div class="wrap">
+  <p class="kicker">If we're happy under one roof</p>
+  <h2>Four houses where the ground floor does all the work</h2>
+  <p class="sectionlead">No separate building for the aunt and uncle — but each of these keeps Nan
+  off the stairs, takes both dogs, and is confirmed free for our week.</p>
+  <div class="grid">
+    <div class="prop">
+      <div class="ph"><span class="tag">★4.98 · single level</span>
+        <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-44103201/original/adfbb744-3559-4627-aaba-89164de0c63c.jpeg?im_w=960" alt="Cregoes, a riverside bungalow at Mylor" loading="lazy" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>Cregoes</h3>
+        <p class="where">Mylor, near Falmouth · 4 bedrooms · sleeps 7</p>
+        <ul>
+          <li><strong>A four-bedroom bungalow</strong> — every couple gets a door to close, nobody touches a stair.</li>
+          <li>Riverside, estuary views from the dining table, front and rear gardens.</li>
+          <li>Listed by the owners as a favourite for <em>multi-generational family holidays</em> — which is exactly what we are.</li>
+        </ul>
+        <p class="price"><span class="amt">£2,565</span><span class="per">week total</span>
+          <a href="https://www.airbnb.co.uk/rooms/44103201" target="_blank" rel="noopener">View listing ↗</a></p>
+      </div>
+    </div>
+    <div class="prop">
+      <div class="ph"><span class="tag">3 bedrooms downstairs</span>
+        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1694857111013475793/original/86ae9688-4915-435a-b0b6-94048c0c182d.jpeg?im_w=960" alt="42 Dennis Road, Padstow" loading="lazy" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>42 Dennis Road</h3>
+        <p class="where">Padstow · 3 bedrooms, 3 bathrooms</p>
+        <ul>
+          <li><strong>All three bedrooms on the ground floor</strong>, one en suite, plus a second downstairs shower room.</li>
+          <li>Kitchen, dining and sitting rooms downstairs too — upstairs is just a bonus lounge with estuary views.</li>
+          <li>Padstow town a few minutes away; sleeps the four of us, not the six.</li>
+        </ul>
+        <p class="price"><span class="amt">£1,840</span><span class="per">week total</span>
+          <a href="https://www.airbnb.co.uk/rooms/1694857111013475793" target="_blank" rel="noopener">View listing ↗</a></p>
+      </div>
+    </div>
+    <div class="prop">
+      <div class="ph"><span class="tag">Ground-floor apartment</span>
+        <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-48088867/original/cdc04c25-086f-47f9-b4e9-21a57e201b94.jpeg?im_w=960" alt="3 The Manor, Lelant" loading="lazy" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>3 The Manor</h3>
+        <p class="where">Lelant, near St Ives · 3 bedrooms, 3 bathrooms · ★4.8</p>
+        <ul>
+          <li>Spacious <strong>ground-floor apartment</strong> — living, kitchen and all three bedrooms on one level.</li>
+          <li>One bedroom opens onto the patio through double doors; freestanding bath; games room.</li>
+          <li>Beside Porthkidney Sands and the golf course, St Ives up the road.</li>
+        </ul>
+        <p class="price"><span class="amt">£2,051</span><span class="per">week total</span>
+          <a href="https://www.airbnb.co.uk/rooms/48088867" target="_blank" rel="noopener">View listing ↗</a></p>
+      </div>
+    </div>
+    <div class="prop">
+      <div class="ph"><span class="tag">★5.0 · 2 bedrooms downstairs</span>
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1437579920169536426/original/baa2597d-774e-437e-9d44-389180d391b9.jpeg?im_w=960" alt="Brayside, a converted chapel in St Just" loading="lazy" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>Brayside</h3>
+        <p class="where">St Just, far west · converted chapel · sleeps 6</p>
+        <ul>
+          <li><strong>Two bedrooms on the ground floor</strong> — a super king and a zip-and-link — so Nan <em>and</em> Mum &amp; Dad stay down.</li>
+          <li>A five-star-rated renovation with a snug, private garden, and the wild far west on the doorstep.</li>
+          <li>Master en suite is upstairs — that's Matthew's.</li>
+        </ul>
+        <p class="price"><span class="amt">£1,727</span><span class="per">week total</span>
+          <a href="https://www.airbnb.co.uk/rooms/1437579920169536426" target="_blank" rel="noopener">View listing ↗</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="nearly">
+    <p class="kicker">Nearly made it</p>
+    <ul>
+      <li><span class="n">Highcliffe estate, Trebetherick</span> — <span class="r">five houses, one site, shared gym and tennis; four free our week. But the cheapest workable pair (with Nan in Nantucket, the only house with confirmed downstairs bedrooms) is £4,281 — £281 over budget.</span></li>
+      <li><span class="n">Bora Gwel, Falmouth</span> — <span class="r">two ground-floor bedrooms and a downstairs bathroom, ★4.94, £2,761 — a fine reserve if the four above go.</span></li>
+      <li><span class="n">Trenarlett Farm, St Tudy</span> — <span class="r">both bedrooms en suite and 4 dogs welcome, but the listing admits three steps between the lounge and the second bedroom. Ask which bedroom Nan would get before it goes back on the list.</span></li>
+      <li><span class="n">Choca + Kegyn, Harlyn Bay</span> — <span class="r">two cottages sharing a courtyard 200m from the beach — and every bedroom in both is upstairs. Out.</span></li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<!-- ============ BEFORE BOOKING ============ -->
+<section>
+<div class="wrap">
+  <p class="kicker">Before anyone books</p>
+  <h2>Three things to check</h2>
+  <div class="check">
+    <ol>
+      <li><strong>Step-free from the car, not just inside.</strong> Every listing above has a ground-floor bed; none of them promises a level path from the parking space. One message to the host settles it.</li>
+      <li><strong>Two dogs in writing.</strong> The pet filter was on for every search, but get it stated on the booking — it's the rule that eliminated half of Cornwall.</li>
+      <li><strong>Prices move.</strong> Totals were verified on 24 August 2026 and include fees. Airbnb repricing is real — treat anything older than a week as an estimate.</li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="stars">❄ ✦ ❄</div>
+    <p>Christmas week 2026 · researched and verified 24 August 2026 ·
+       <a href="index.html">the full shortlist, all regions ↗</a></p>
+    <p class="smallprint">Photos are hotlinked from the listings and belong to their owners.
+    Every claim about bedrooms and floors comes from the listing's own room-by-room description,
+    not the summary.</p>
+  </div>
+</footer>
+
+</body>
+</html>
