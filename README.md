@@ -100,22 +100,22 @@ listing's own room-by-room description, not its summary.
 
 Searched 23 August 2026 for 21-28 December 2026, 2 dogs, 2+ bedrooms.
 
-### Otters Holt + Badgers Sett — Towan, **£2,423**
+### Otters Holt + Badgers Sett — Towan, **£2,253** (re-verified 31 Aug)
 
 - **Otters Holt (£1,005)** — Nan, Mum & Dad, both dogs. A **bungalow**, so there is no upstairs at
   all. Primary bedroom is a king **with en suite and sliding doors onto the garden**. Large enclosed
   rear garden.
-- **Badgers Sett (£1,418)** — Matthew and the aunt and uncle. Detached, private garden, parking for
+- **Badgers Sett (£1,248, down from £1,418)** — Matthew and the aunt and uncle. Detached, private garden, parking for
   three. Its bedrooms are upstairs, which is fine — Nan is not in this one.
 - Same small hamlet, a house or two apart. Both take two dogs. St Merryn village walkable from both
   (mini market, bakery, restaurants); footpaths from Otters Holt's door towards Trevose Head.
-- **£1,577 under budget.**
+- **£1,747 under budget.**
 
 ### Also clears the rule
 
 | Property | Week total | Note |
 |---|---|---|
-| **42 Dennis Road**, Padstow | £1,840 | **All three bedrooms ground floor**, one en suite, plus a second GF shower room. One house, so the aunt and uncle need somewhere nearby. |
+| ~~42 Dennis Road, Padstow~~ | ~~£1,840~~ | **Booked by someone else, confirmed 31 Aug** — its calendar now refuses our dates. Was the best ground-floor house in the project. |
 | **Streatfeild + Nantucket**, Highcliffe | £4,281 | Five-house estate, shared gym and tennis. Only works with **Nan in Nantucket** (two bedrooms downstairs) — Streatfeild's floors are unstated. **£281 over budget.** |
 
 ### Ruled out by the rule
