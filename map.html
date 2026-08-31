@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The map — Christmas 2026 shortlist</title>
+<meta name="description" content="Every place that fits the brief, on one map — Padstow at the centre.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<style>
+:root{
+  --paper:#faf6ee; --card:#fff; --ink:#22201b; --muted:#7a7264; --line:#e7dfd0;
+  --pine:#1e4d38; --gold:#b08c3d; --berry:#9c2f22;
+  --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#151511;--card:#1e1d18;--ink:#efe9dc;--muted:#a59c8a;--line:#333026;
+        --pine:#6fae8f;--gold:#d3ae62;--berry:#e08573}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5}
+header{padding:22px;text-align:center;border-bottom:1px solid var(--line)}
+header h1{font-family:var(--serif);font-weight:600;font-size:clamp(1.4rem,4vw,2rem);margin:0 0 .2em}
+header p{color:var(--muted);margin:0;font-size:.95rem}
+header a{color:var(--pine)}
+#map{height:calc(100vh - 210px);min-height:430px}
+.legend{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;padding:12px 16px;
+        font-size:.85rem;color:var(--muted);border-top:1px solid var(--line)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.dot{width:13px;height:13px;border-radius:50%;display:inline-block;border:2px solid rgba(0,0,0,.25)}
+.leaflet-popup-content{font-family:var(--sans);font-size:.9rem;line-height:1.45;margin:12px 16px}
+.leaflet-popup-content b{font-family:var(--serif);font-size:1.02rem}
+.leaflet-popup-content .pr{color:#1e4d38;font-weight:700}
+.leaflet-popup-content a{color:#1e4d38}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Everything that fits, on one map</h1>
+  <p>Ground-floor bed for Nan · two dogs · confirmed or callable for 21–28 Dec 2026 ·
+     pins mark the village, not the front door · <a href="cornwall.html">back to the pitch ↗</a></p>
+</header>
+
+<div id="map"></div>
+
+<div class="legend">
+  <span><span class="dot" style="background:#1e4d38"></span> Two buildings — book now</span>
+  <span><span class="dot" style="background:#b08c3d"></span> One roof — book now</span>
+  <span><span class="dot" style="background:#9c2f22"></span> Needs a phone call</span>
+  <span><span class="dot" style="background:#444;border-radius:3px"></span> Padstow, for reference</span>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+const map = L.map('map');
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+  {attribution:'&copy; OpenStreetMap contributors', maxZoom:17}).addTo(map);
+
+const C = {pair:'#1e4d38', roof:'#b08c3d', call:'#9c2f22'};
+const spots = [
+ // -------- near Padstow --------
+ {n:'Otters Holt + Badgers Sett', w:'Towan, 3 miles from Padstow', t:'pair', p:'£2,253',
+  d:'The pick. Bungalow with ground-floor en-suite king for Nan; second house a moment away.',
+  u:'https://www.airbnb.co.uk/rooms/49310297', lat:50.5262, lng:-5.0126},
+ {n:'Nantucket + The Annex at Trewidden', w:'Trebetherick, across the estuary', t:'pair', p:'£3,117',
+  d:'Nan in Nantucket (two bedrooms downstairs); aunt &amp; uncle in a truly separate studio 5 min from Daymer Bay.',
+  u:'https://www.airbnb.co.uk/rooms/1402617566805887013', lat:50.5677, lng:-4.9268},
+ {n:'Highcliffe estate (Streatfeild + Nantucket)', w:'Trebetherick', t:'pair', p:'£4,281 — £281 over budget',
+  d:'Five houses, one site, shared gym and tennis. Nan must be in Nantucket.',
+  u:'https://www.airbnb.co.uk/rooms/1211509326102962074', lat:50.5697, lng:-4.9235},
+ {n:'Trenarlett Farm', w:'St Tudy, 15 min from Padstow', t:'call', p:'price unpublished',
+  d:'Two cottages, 4 dogs, both bedrooms en suite — but ask about the three steps to the second bedroom first.',
+  u:'https://www.trenarlett.com/cottages', lat:50.5561, lng:-4.7431},
+ {n:'Harrods Cornish Cottages', w:'Penhallow, 25 min south', t:'call', p:'~£1,380–£2,950',
+  d:'Coach House + The Forge: two buildings, every bedroom ground floor and en suite. Ask availability and the festive rate.',
+  u:'https://www.harrods-cornwall.co.uk/the-cottages/', lat:50.3183, lng:-5.1163},
+ // -------- rest of Cornwall --------
+ {n:'Tregrehan Garden Cottages', w:'Par, near Eden Project', t:'call', p:'£1,540 + second cottage TBC',
+  d:'Coach House confirmed £1,540; ask the Game Keepers rate for our exact week.',
+  u:'https://www.tregrehan.org/', lat:50.3537, lng:-4.7440},
+ {n:'Brayside', w:'St Just, far west', t:'roof', p:'£1,884',
+  d:'Converted chapel, ★5.0 — two bedrooms on the ground floor.',
+  u:'https://www.airbnb.co.uk/rooms/1437579920169536426', lat:50.1244, lng:-5.6801},
+ {n:'3 The Manor', w:'Lelant, near St Ives', t:'roof', p:'£2,051',
+  d:'Ground-floor apartment: three bedrooms, three bathrooms, one level.',
+  u:'https://www.airbnb.co.uk/rooms/48088867', lat:50.1847, lng:-5.4370},
+ {n:'Cregoes', w:'Mylor, near Falmouth', t:'roof', p:'£2,565',
+  d:'Four-bedroom single-level bungalow, ★4.98, riverside. A room each and zero stairs.',
+  u:'https://www.airbnb.co.uk/rooms/44103201', lat:50.1841, lng:-5.0741},
+ {n:'Bora Gwel', w:'Falmouth', t:'roof', p:'£2,761',
+  d:'Two ground-floor bedrooms plus a downstairs bathroom, ★4.94, Fal views.',
+  u:'https://www.airbnb.co.uk/rooms/1277339296541286847', lat:50.1552, lng:-5.0689},
+ // -------- North Devon --------
+ {n:'Old Bakery Cottage', w:'Mortehoe, North Devon', t:'roof', p:'£1,286',
+  d:'Every bedroom on the ground floor — two doubles (one en suite) and adult-size bunks. Coast path yards away.',
+  u:'https://www.airbnb.co.uk/rooms/883435078843842361', lat:51.1855, lng:-4.2124},
+ {n:'Chuggs Orchard', w:'Croyde, North Devon', t:'roof', p:'£2,876',
+  d:'Four-bedroom bungalow in the village, secure mature grounds, walk to the beach.',
+  u:'https://www.airbnb.co.uk/rooms/1442599167575767586', lat:51.1300, lng:-4.2380},
+];
+
+const bounds = [];
+spots.forEach(s=>{
+  const m = L.circleMarker([s.lat, s.lng],
+    {radius:9, color:'#fff', weight:2, fillColor:C[s.t], fillOpacity:.95}).addTo(map);
+  m.bindPopup('<b>'+s.n+'</b><br>'+s.w+'<br><span class="pr">'+s.p+'</span><br>'+s.d+
+              '<br><a href="'+s.u+'" target="_blank" rel="noopener">View listing ↗</a>');
+  bounds.push([s.lat, s.lng]);
+});
+
+// Padstow reference
+const pad = L.marker([50.5426,-4.9366], {icon: L.divIcon({className:'',
+  html:'<div style="background:#444;color:#fff;border-radius:6px;padding:2px 8px;font:600 11px sans-serif;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,.4)">PADSTOW</div>',
+  iconAnchor:[28,10]})}).addTo(map);
+bounds.push([50.5426,-4.9366]);
+
+map.fitBounds(bounds, {padding:[36,36]});
+</script>
+</body>
+</html>
