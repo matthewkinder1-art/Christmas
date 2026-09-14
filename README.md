@@ -100,16 +100,17 @@ listing's own room-by-room description, not its summary.
 
 Searched 23 August 2026 for 21-28 December 2026, 2 dogs, 2+ bedrooms.
 
-### Otters Holt + Badgers Sett — Towan, **£2,253** (re-verified 31 Aug)
+### Otters Holt + TreHaven — St Merryn, **£2,226** (re-verified 14 Sep)
 
-- **Otters Holt (£1,005)** — Nan, Mum & Dad, both dogs. A **bungalow**, so there is no upstairs at
+- **Otters Holt (£980)** — Nan, Mum & Dad, both dogs. A **bungalow**, so there is no upstairs at
   all. Primary bedroom is a king **with en suite and sliding doors onto the garden**. Large enclosed
   rear garden.
-- **Badgers Sett (£1,248, down from £1,418)** — Matthew and the aunt and uncle. Detached, private garden, parking for
-  three. Its bedrooms are upstairs, which is fine — Nan is not in this one.
+- **TreHaven (£1,246)** — Matthew and the aunt and uncle. Four-bedroom detached house, ★4.96, heart of
+  St Merryn, enclosed garden, garage. Bedrooms upstairs, which is fine — Nan is not in this one.
+  (Badgers Sett, the previous partner, was booked 14 Sep.)
 - Same small hamlet, a house or two apart. Both take two dogs. St Merryn village walkable from both
   (mini market, bakery, restaurants); footpaths from Otters Holt's door towards Trevose Head.
-- **£1,747 under budget.**
+- **£1,774 under budget.**
 
 ### Also clears the rule
 
@@ -154,3 +155,12 @@ No build step and no dependencies; the pages are plain HTML.
 
 Photos are hotlinked from the agency listings and will quietly disappear if those change.
 Maps are OpenStreetMap embeds.
+
+## Refresh — 14 September 2026
+
+Booked since 31 Aug (all fitted the brief): Badgers Sett, Brayside, Old Bakery Cottage, Field View
+Lodge, Fernleigh, Pop's Place. New: **TreHaven** (partner for Otters Holt), **Sunnybank** Port Isaac
+bungalow £1,621, **Carnawn** Port Gaverne £1,575 (12 steps from car), **Porth Beach apartment** £1,397
+(step-free from car park), **Nutcombe Holiday Cottages** Combe Martin (three barns, published Christmas
+rates £1,410 + £1,190, availability by phone). Agencies: Classic, Sykes, Marsdens, Cornish Horizons and
+Vrbo checked — see the pitch page for what each yielded.

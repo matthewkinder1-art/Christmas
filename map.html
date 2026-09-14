@@ -40,7 +40,7 @@ header a{color:var(--pine)}
 <header>
   <h1>Everything that fits, on one map</h1>
   <p>Ground-floor bed for Nan · two dogs · confirmed or callable for 21–28 Dec 2026 ·
-     pins mark the village, not the front door · <a href="cornwall.html">back to the pitch ↗</a></p>
+     pins mark the village, not the front door · re-verified 14 Sep 2026 · <a href="cornwall.html">back to the pitch ↗</a></p>
 </header>
 
 <div id="map"></div>
@@ -62,15 +62,24 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
 const C = {pair:'#1e4d38', roof:'#b08c3d', call:'#9c2f22'};
 const spots = [
  // -------- near Padstow --------
- {n:'Otters Holt + Badgers Sett', w:'Towan, 3 miles from Padstow', t:'pair', p:'£2,253',
-  d:'The pick. Bungalow with ground-floor en-suite king for Nan; second house a moment away.',
-  u:'https://www.airbnb.co.uk/rooms/49310297', lat:50.5262, lng:-5.0126},
+ {n:'Otters Holt + TreHaven', w:'St Merryn, 3 miles from Padstow', t:'pair', p:'£2,226',
+  d:'The pick. Bungalow with ground-floor en-suite king for Nan on the edge of the village; a four-bedroom house (★4.96) in the centre for the others.',
+  u:'https://www.airbnb.co.uk/rooms/49310297', lat:50.5240, lng:-5.0140},
  {n:'Nantucket + The Annex at Trewidden', w:'Trebetherick, across the estuary', t:'pair', p:'£3,117',
   d:'Nan in Nantucket (two bedrooms downstairs); aunt &amp; uncle in a truly separate studio 5 min from Daymer Bay.',
   u:'https://www.airbnb.co.uk/rooms/1402617566805887013', lat:50.5677, lng:-4.9268},
  {n:'Highcliffe estate (Streatfeild + Nantucket)', w:'Trebetherick', t:'pair', p:'£4,281 — £281 over budget',
   d:'Five houses, one site, shared gym and tennis. Nan must be in Nantucket.',
   u:'https://www.airbnb.co.uk/rooms/1211509326102962074', lat:50.5697, lng:-4.9235},
+ {n:'Sunnybank', w:'Port Isaac', t:'roof', p:'£1,621',
+  d:'Detached bungalow at the top of the village, ★5.0, sea views over the bay. Sleeps 6 on one level.',
+  u:'https://www.airbnb.co.uk/rooms/614084722952604327', lat:50.5926, lng:-4.8320},
+ {n:'Carnawn', w:'Port Gaverne cove', t:'roof', p:'£1,575',
+  d:'★4.92 from 110 reviews, overlooking the cove. Downstairs twin with shower room for Nan — but twelve steps up from the car park.',
+  u:'https://www.airbnb.co.uk/rooms/28659249', lat:50.5950, lng:-4.8250},
+ {n:'Porth Beach apartment', w:'Porth, Newquay', t:'roof', p:'£1,397',
+  d:'★5.0, all on one level and the only listing that promises step-free access from the car park. 30 seconds to the sand.',
+  u:'https://www.airbnb.co.uk/rooms/1603609599639308594', lat:50.4290, lng:-5.0650},
  {n:'Trenarlett Farm', w:'St Tudy, 15 min from Padstow', t:'call', p:'price unpublished',
   d:'Two cottages, 4 dogs, both bedrooms en suite — but ask about the three steps to the second bedroom first.',
   u:'https://www.trenarlett.com/cottages', lat:50.5561, lng:-4.7431},
@@ -81,9 +90,6 @@ const spots = [
  {n:'Tregrehan Garden Cottages', w:'Par, near Eden Project', t:'call', p:'£1,540 + second cottage TBC',
   d:'Coach House confirmed £1,540; ask the Game Keepers rate for our exact week.',
   u:'https://www.tregrehan.org/', lat:50.3537, lng:-4.7440},
- {n:'Brayside', w:'St Just, far west', t:'roof', p:'£1,884',
-  d:'Converted chapel, ★5.0 — two bedrooms on the ground floor.',
-  u:'https://www.airbnb.co.uk/rooms/1437579920169536426', lat:50.1244, lng:-5.6801},
  {n:'3 The Manor', w:'Lelant, near St Ives', t:'roof', p:'£2,051',
   d:'Ground-floor apartment: three bedrooms, three bathrooms, one level.',
   u:'https://www.airbnb.co.uk/rooms/48088867', lat:50.1847, lng:-5.4370},
@@ -94,9 +100,9 @@ const spots = [
   d:'Two ground-floor bedrooms plus a downstairs bathroom, ★4.94, Fal views.',
   u:'https://www.airbnb.co.uk/rooms/1277339296541286847', lat:50.1552, lng:-5.0689},
  // -------- North Devon --------
- {n:'Old Bakery Cottage', w:'Mortehoe, North Devon', t:'roof', p:'£1,286',
-  d:'Every bedroom on the ground floor — two doubles (one en suite) and adult-size bunks. Coast path yards away.',
-  u:'https://www.airbnb.co.uk/rooms/883435078843842361', lat:51.1855, lng:-4.2124},
+ {n:'Nutcombe Holiday Cottages', w:'Combe Martin, North Devon', t:'call', p:'£1,410 + £1,190 published',
+  d:'Three barns on one site, two dogs each, published Christmas rates. Availability for our week needs a call.',
+  u:'https://www.independentcottages.co.uk/exmoor/nutcombe-barn-ref4511', lat:51.2000, lng:-4.0250},
  {n:'Chuggs Orchard', w:'Croyde, North Devon', t:'roof', p:'£2,876',
   d:'Four-bedroom bungalow in the village, secure mature grounds, walk to the beach.',
   u:'https://www.airbnb.co.uk/rooms/1442599167575767586', lat:51.1300, lng:-4.2380},
