@@ -100,9 +100,9 @@ listing's own room-by-room description, not its summary.
 
 Searched 23 August 2026 for 21-28 December 2026, 2 dogs, 2+ bedrooms.
 
-### Otters Holt + TreHaven — St Merryn, **£2,226** (re-verified 14 Sep)
+### Otters Holt + TreHaven — St Merryn, **£2,251** (re-verified 16 Sep)
 
-- **Otters Holt (£980)** — Nan, Mum & Dad, both dogs. A **bungalow**, so there is no upstairs at
+- **Otters Holt (£1,005)** — Nan, Mum & Dad, both dogs. A **bungalow**, so there is no upstairs at
   all. Primary bedroom is a king **with en suite and sliding doors onto the garden**. Large enclosed
   rear garden.
 - **TreHaven (£1,246)** — Matthew and the aunt and uncle. Four-bedroom detached house, ★4.96, heart of
@@ -110,7 +110,7 @@ Searched 23 August 2026 for 21-28 December 2026, 2 dogs, 2+ bedrooms.
   (Badgers Sett, the previous partner, was booked 14 Sep.)
 - Same small hamlet, a house or two apart. Both take two dogs. St Merryn village walkable from both
   (mini market, bakery, restaurants); footpaths from Otters Holt's door towards Trevose Head.
-- **£1,774 under budget.**
+- **£1,749 under budget.**
 
 ### Also clears the rule
 
