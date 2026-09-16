@@ -182,3 +182,21 @@ and bathroom, pub within a mile (holidaycottages.co.uk filter, 37 results, all r
 
 Out: Sunshine Cottage, Westward Ho! (accessible single-storey, wet room, ramp, 12 sister cottages —
 booked from 21 Dec); White Dunes, Constantine Bay (not available 14 nights; living room upstairs).
+
+## Two places under 200 m apart, 14–28 Dec (checked 16 Sep 2026)
+
+Rule tightened: two separate buildings on one site, one for Nan + dogs (ground-floor bed), the
+other just a 2-bed. All South West + East of England holidaycottages.co.uk results with the
+downstairs-bedroom/bathroom/2-dog/pub filter were scanned for same-site sisters (138 listings).
+
+| Pair | Where | 14 nights | Nan's unit |
+|---|---|---|---|
+| **Coombe Barn + Welcombe Cottage** | Cory Farm, Morwenstow | **£3,442** | Single storey, en-suite wet room |
+| Pebbleridge + Sandymere | Westward Ho! | £4,195 | Ground-floor flat, en suite, hot tub |
+| 2 Beach View + 4/5 Beach View | Crantock | £4,211 | GF bedroom + bathroom, sea-view balcony |
+| Arthur + Merlin | Tintagel | £4,564 | Both bedrooms GF, en suite |
+| Westpoundland View + Exmoor View | Kentisbury Grange, nr Barnstaple | £6,292 | Lodge, king en suite, hot tub |
+
+Three-bed sisters only: Two Bees + Dovecote £5,980; Highcliffe £6,586; Gulls Watch + Tide & Dune
+£8,001; Trenearne Farm £8,179. Out: Otters Holt pairs (480–780 m apart), Norfolk (Winterton's
+2-beds booked; nothing near Wells), Sunshine Cottage (booked), Rosehill Lodges (£10.5k).

@@ -40,7 +40,7 @@ header a{color:var(--pine)}
 <header>
   <h1>Everything that fits, on one map</h1>
   <p>Ground-floor bed for Nan · two dogs · confirmed or callable for 21–28 Dec 2026 ·
-     pins mark the village, not the front door · re-verified 16 Sep 2026 · <a href="cornwall.html">back to the pitch ↗</a></p>
+     pins mark the village, not the front door · two-places-under-200 m pairs added 16 Sep 2026 · <a href="cornwall.html">back to the pitch ↗</a></p>
 </header>
 
 <div id="map"></div>
@@ -61,8 +61,23 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
 
 const C = {pair:'#1e4d38', roof:'#b08c3d', call:'#9c2f22'};
 const spots = [
+ {n:'Cory Farm — Coombe Barn + Welcombe Cottage', w:'Morwenstow, between Bude and Hartland', t:'pair', p:'£3,442 fortnight',
+  d:'THE PICK. Single-storey barn with en-suite wet room for Nan and the dogs; detached two-bed sister on the same farmyard. Both free 14–28 Dec. Remote.',
+  u:'https://www.holidaycottages.co.uk/cottage/oc-38881-cory-farm-coombe-barn?n=14&sd=14122026', lat:50.9200, lng:-4.5330},
+ {n:'Westward Ho! — Pebbleridge + Sandymere', w:'Westward Ho!, near Bideford', t:'pair', p:'£4,195 fortnight',
+  d:'Ground-floor apartment with en suite and a hot-tub garden; two-bed sister in the same building. Short stroll to the beach.',
+  u:'https://www.holidaycottages.co.uk/cottage/oc-36709-westward-pebbleridge?n=14&sd=14122026', lat:51.0400, lng:-4.2350},
+ {n:'Crantock — Beach View 2 + 4/5', w:'Crantock, near Newquay', t:'pair', p:'£4,211 fortnight',
+  d:'Coastal apartments in one row above the beach; king en suite, sea-view balcony. Two two-bed sisters still free.',
+  u:'https://www.holidaycottages.co.uk/cottage/oc-33555-2-beach-view-crantock?n=14&sd=14122026', lat:50.4040, lng:-5.1200},
+ {n:'Tintagel — Arthur + Merlin', w:'Tintagel', t:'pair', p:'£4,564 fortnight',
+  d:'Both of Arthur's bedrooms ground floor, en suite, castle views; Merlin is the two-bed sister.',
+  u:'https://www.holidaycottages.co.uk/cottage/oc-32939-arthur?n=14&sd=14122026', lat:50.6630, lng:-4.7520},
+ {n:'Kentisbury Grange — two lodges', w:'Kentisbury, near Barnstaple', t:'pair', p:'£6,292 fortnight',
+  d:'Two hot-tub lodges in manor grounds on the edge of Exmoor; king en suites; restaurant on site.',
+  u:'https://www.holidaycottages.co.uk/cottage/oc-40992-westpoundland-view?n=14&sd=14122026', lat:51.1630, lng:-3.9430},
  // -------- near Padstow --------
- {n:'Otters Holt + TreHaven', w:'St Merryn, 3 miles from Padstow', t:'pair', p:'£2,251 week · £4,088 fortnight',
+ {n:'Otters Holt + TreHaven', w:'St Merryn, 3 miles from Padstow', t:'roof', p:'£2,251 week · £4,088 fortnight · 480–780 m apart',
   d:'The pick. Bungalow with ground-floor en-suite king for Nan on the edge of the village; a four-bedroom house (★4.96) in the centre for the others.',
   u:'https://www.airbnb.co.uk/rooms/49310297', lat:50.5240, lng:-5.0140},
  {n:'Nantucket + The Annex at Trewidden', w:'Trebetherick, across the estuary', t:'pair', p:'£3,117',
