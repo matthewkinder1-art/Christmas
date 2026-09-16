@@ -164,3 +164,21 @@ bungalow £1,621, **Carnawn** Port Gaverne £1,575 (12 steps from car), **Porth 
 (step-free from car park), **Nutcombe Holiday Cottages** Combe Martin (three barns, published Christmas
 rates £1,410 + £1,190, availability by phone). Agencies: Classic, Sykes, Marsdens, Cornish Horizons and
 Vrbo checked — see the pitch page for what each yielded.
+
+## Two weeks over Christmas — 14 to 28 December (checked 16 Sep 2026)
+
+The brief is now ideally a fortnight. **Otters Holt + TreHaven are both free for 14–28 Dec:
+£1,776 + £2,312 = £4,088** for the two houses for two weeks. The pick extends.
+
+Five-star agency houses near Padstow, all free for the full 14 nights, 2 dogs, ground-floor bed
+and bathroom, pub within a mile (holidaycottages.co.uk filter, 37 results, all read):
+
+| Property | 14 nights | Week | Nan |
+|---|---|---|---|
+| **The Bower**, Trevone | £4,083 | £2,069 | **Single-level house**, sleeps 8, no en suite |
+| **Gulls Watch**, St Merryn | £4,235 | £2,148 | GF double **en suite**, sleeps 8 |
+| Penwhine, St Merryn | £3,357 | £1,711 | 3 GF bedrooms + shower room — but **steps to the house** |
+| Two Bees + Dovecote Barns, Bridgerule (Bude) | £5,980 pair | £3,060 | Two Bees single storey; Dovecote bedrooms GF |
+
+Out: Sunshine Cottage, Westward Ho! (accessible single-storey, wet room, ramp, 12 sister cottages —
+booked from 21 Dec); White Dunes, Constantine Bay (not available 14 nights; living room upstairs).
